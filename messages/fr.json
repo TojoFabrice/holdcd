@@ -1,0 +1,16 @@
+{
+    "HomePage": {
+        "title": "bonjour"
+    },
+    "Navigation": {
+        "home": "Accueil",
+        "about": "A propos",
+        "advantage": "Avantages",
+        "howTowork": "Comment ça marche",
+        "service": "Nos services",
+        "contact": "Contact"
+    },
+    "Footer": {
+        "copyright": "copyright"
+    }
+}

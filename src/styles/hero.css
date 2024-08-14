@@ -1,0 +1,10 @@
+.hero {
+    background-image: url('/images/hero.jpg');
+    background-size: cover; /* L'image couvre tout le header */
+    background-position: center; /* L'image est centrée */
+    background-repeat: no-repeat; /* L'image ne se répète pas */
+    height: calc(100vh - 0px); /* Hauteur du header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
