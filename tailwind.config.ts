@@ -19,7 +19,9 @@ const config: Config = {
       'secondary': '#FA7B1E',
       'text': '#858585',
       'title': '#696868',
-      'minibar': '#D9D9D9'
+      'minibar': '#D9D9D9',
+      "white": '#fff',
+      "black": "#000"
     }
   },
   plugins: [],
