@@ -81,8 +81,7 @@ export default function Header() {
           <div className="w-60 max-w-full px-4 xl:mr-12">
             <Link
               href="/"
-              className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
+              className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"} `}
             >
               <Image
                 src="/images/logo.png"
@@ -98,10 +97,10 @@ export default function Header() {
             <div>
               <nav
                 id="navbarCollapse"
-                className={`navbar absolute right-0 z-30 w-full rounded border-[.5px] border-body-color/50  px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 
+                className="navbar absolute right-0 z-30 w-full rounded border-[.5px] border-body-color/50  px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 
 
                     invisible top-[120%] opacity-0
-                  `}
+                  "
                 // className="navbar absolute"
               >
                 <ul className="block lg:flex lg:space-x-12">
