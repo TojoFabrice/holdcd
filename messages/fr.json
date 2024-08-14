@@ -12,5 +12,23 @@
     },
     "Footer": {
         "copyright": "copyright"
+    },
+    "About": {
+        "title": "A propos de nous",
+        "content": {
+            "paraph1": "Depuis plus de deux décennies, Hold CD s'est imposée comme un acteur de référence dans l'approvisionnement en fournitures industrielles, matières premières et pièces de rechange pour les entreprises industrielles, à l'échelle mondiale.",
+            "paraph2": "Nous avons tissé un vaste réseau de fournisseurs sur les marchés européens et nord-américains, ce qui nous permet d'accéder à des informations précises et fiables en un temps réduit, ainsi qu'à des conditions tarifaires et de livraison avantageuses.",
+            "paraph3": "Nos clients choisissent de déléguer une partie de leur processus d'approvisionnement à Hold CD pour rationaliser leurs opérations et améliorer leur efficacité. Cela se traduit par:",
+            "list": ["une transmission rapide des informations,", "la disponibilité des produits,", "une rentabilité accrue,", "…ou une combinaison de ces avantages."],
+            "paraph4": "Peu importe où vous vous trouvez dans le monde, il vous suffit d'envoyer un courriel avec les références nécessaires, et nos experts vous fourniront une offre globale dans un délai de 24 à 48 heures. Toutes les références, même provenant de différents fournisseurs, seront intégrées en un seul processus : une seule offre, un seul colis et un processus d'importation simplifié."
+        }
+    },
+    "Advantage": {
+        "title": "avantages",
+        "card": {
+            "simplicity": "Simplicité",
+            "reability": "Fiabilité",
+            "costTimeSaving": "Economies de coûts et de temps"
+        }
     }
 }
