@@ -118,7 +118,7 @@ function HowItWork() {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td rowSpan="4" className="vertical-center" style={{ textAlign: 'center', padding: '0px 15px', height: '60px' }}>
+                                    <td rowSpan={4} className="vertical-center" style={{ textAlign: 'center', padding: '0px 15px', height: '60px' }}>
                                         <Image
                                             src="/images/industrie.png"
                                             alt="fiable"
@@ -126,7 +126,7 @@ function HowItWork() {
                                             height={80}
                                         />
                                     </td>
-                                    <td rowSpan="4" className="vertical-center image-cell" style={{ textAlign: 'center', padding: '0px 15px', height: '60px' }}>
+                                    <td rowSpan={4} className="vertical-center image-cell" style={{ textAlign: 'center', padding: '0px 15px', height: '60px' }}>
                                         <Image
                                             src="/images/arrow.png"
                                             alt="fiable"
