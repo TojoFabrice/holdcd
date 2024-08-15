@@ -8,7 +8,7 @@ export default function HomePage() {
   const t = useTranslations('HomePage');
   return (
     <div>
-      <Hero />
+      
       <div className=''>
         <div className='w-4/5 m-auto'>
           <AboutSection />

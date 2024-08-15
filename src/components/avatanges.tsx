@@ -5,14 +5,14 @@ import Card from './card/card';
 function Avatanges() {
     const t = useTranslations('Advantage');
     return (
-        <section id='avantage' className='p-10 mt-16'>
+        <section id='advantage' className='px-0 md:p-10 mt-16'>
             <div>
-                <div className="text-title	text-3xl font-medium">
+                <div className="text-title text-3xl font-medium">
                     {t("title")}
                 </div>
                 <span className="w-full bg-minibar h-[2px] block my-5"></span>
             </div>
-            <div className='flex gap-14 mt-8'>
+            <div className='flex flex-col md:flex-row gap-14 mt-8'>
                 <Card />
                 <Card />
                 <Card />

@@ -34,8 +34,8 @@ export default function LocalSwitcher() {
       icon: <Image
         src="/icons/usa.png"
         alt="logo"
-        width={25}
-        height={25}
+        width={30}
+        height={30}
       />
     },
     {
@@ -44,8 +44,8 @@ export default function LocalSwitcher() {
       icon: <Image
         src="/icons/france.png"
         alt="logo"
-        width={25}
-        height={25}
+        width={30}
+        height={30}
       />
     },
   ];
