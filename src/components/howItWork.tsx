@@ -1,8 +1,11 @@
 import React from 'react'
 import Image from "next/image";
-
+import { useLocale } from 'next-intl';
 
 function HowItWork() {
+
+    const localActive = useLocale()
+
     return (
         <section id="howToWork" className="bg-[#F9F8F8] p-10 mt-16 m-auto">
             <div>
@@ -11,9 +14,9 @@ function HowItWork() {
                 </div>
                 <span className="w-full bg-minibar h-[2px] block my-5"></span>
             </div>
-            <div className='flex justify-between'>
-                <div className='w-1/3'>
-                    <div className='w-full flex justify-start'>
+            <div className='flex justify-center'>
+                <div className='w-full'>
+                    {/* <div className='w-full flex justify-start'>
                         <table className='text-text'>
                             <thead>
                                 <tr>
@@ -98,9 +101,16 @@ function HowItWork() {
                     <div className='w-full mt-2'>
                         <div className='text-center font-semibold text-title'>ETAPE 1</div>
                         <div className='w-2/3 m-auto text-center text-sm text-text mt-2'>Trouver le bon fournisseur <br></br> Demande de devis</div>
-                    </div>
+                    </div> */}
+                    <Image
+                        src={localActive == "fr" ? "/images/CM1.png" : "/images/CM1_EN.png"}
+                        alt="fiable"
+                        width={2000}
+                        height={0}
+                    />
                 </div>
-                <div className='w-2/3'>
+                {/* <div className='w-2/3'>
+                
                     <div className='w-full flex justify-end'>
                         <table className='text-text'>
                             <thead>
@@ -379,16 +389,16 @@ function HowItWork() {
                         <div className='text-center font-semibold text-title'>ETAPE 1</div>
                         <div className='w-2/3 m-auto text-center text-sm text-text mt-2'>Commande et livraison</div>
                     </div>
-                </div>
+                </div> */}
             </div>
-                <div  className='w-full flex justify-center'>
-                    <Image
-                        src="/images/Vector3.png"
-                        alt="fiable"
-                        layout="fill"
-                        objectFit="contain"
-                    />
-                </div>
+            <div className='w-full flex justify-center mt-12'>
+                <Image
+                    src={localActive == "fr" ? "/images/CM2.png" : "/images/CM2_EN.png"}
+                    alt="fiable"
+                    width={2000}
+                    height={0}
+                />
+            </div>
         </section>
     )
 }
