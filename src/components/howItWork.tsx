@@ -19,12 +19,12 @@ function HowItWork() {
                                 <tr>
                                     <th style={{ textAlign: 'center', padding: '10px' }}>Customer</th>
                                     <th style={{ textAlign: 'center', padding: '10px' }}></th>
-                                    <th colSpan="2" style={{ textAlign: 'center', padding: '10px' }}>Supplier</th>
+                                    <th colSpan={2} style={{ textAlign: 'center', padding: '10px' }}>Supplier</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td rowSpan="5" className="vertical-center" style={{ padding: '0px 15px', height: '60px' }}>
+                                    <td rowSpan={5} className="vertical-center" style={{ padding: '0px 15px', height: '60px' }}>
                                         <Image
                                             src="/images/industrie.png"
                                             alt="fiable"
@@ -32,7 +32,7 @@ function HowItWork() {
                                             height={80}
                                         />
                                     </td>
-                                    <td rowSpan="5" className="vertical-center image-cell" style={{ padding: '0px 15px', height: '60px' }}>
+                                    <td rowSpan={5} className="vertical-center image-cell" style={{ padding: '0px 15px', height: '60px' }}>
                                         <Image
                                             src="/images/arrow.png"
                                             alt="fiable"
