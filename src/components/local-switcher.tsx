@@ -61,7 +61,7 @@ export default function LocalSwitcher() {
     <div>
       <button  
        onClick={toggleDropdown}
-       className="inline-flex justify-center w-12 px-4 py-2  bg-secondary border border-text rounded-md shadow-sm hover:bg-gray-50">
+       className="inline-flex justify-center w-12 px-4 py-2   border border-text rounded-md shadow-sm hover:bg-gray-50">
         {languages.find(lang => lang.code === localActive)?.icon}
       </button>
 

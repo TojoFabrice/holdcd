@@ -21,9 +21,29 @@ const config: Config = {
       'title': '#696868',
       'minibar': '#D9D9D9',
       "white": '#fff',
-      "black": "#000"
+      "black": "#000",
+      "fondContact": "#F6F6F6",
+      "grayFonced": "#232323"
     }
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          'primary': '#1A2665',
+          'secondary': '#FA7B1E',
+          'text': '#858585',
+          'title': '#696868',
+          'minibar': '#D9D9D9',
+          "white": '#fff',
+          "black": "#000",
+          "fondContact": "#F6F6F6"
+        },
+      },
+    ],
+  },
 };
 export default config;
