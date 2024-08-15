@@ -23,7 +23,8 @@ const config: Config = {
       "white": '#fff',
       "black": "#000",
       "fondContact": "#F6F6F6",
-      "grayFonced": "#232323"
+      "grayFonced": "#232323",
+      'service-bg': "#FEFEFE"
     }
   },
   plugins: [

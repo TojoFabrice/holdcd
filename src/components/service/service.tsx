@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image";
 
 
-function Service({positionImage}:{positionImage:string}) {
+function Service({positionImage, image}:{positionImage:string, image:string}) {
     return (
         <div>
             {
@@ -10,7 +10,7 @@ function Service({positionImage}:{positionImage:string}) {
                 <div className='flex flex-col items-center justify-start md:flex-row md:justify-between gap-8'>
                     <div className='w-full: md:w-1/3'>
                         <Image
-                            src="/images/industrie.png"
+                            src={image}
                             alt="logo"
                             width={300}
                             height={200}
@@ -42,7 +42,7 @@ function Service({positionImage}:{positionImage:string}) {
                         </div>                    </div>
                     <div className='w-full: md:w-1/3 flex justify-end'>
                         <Image
-                            src="/images/industrie.png"
+                            src={image}
                             alt="logo"
                             width={300}
                             height={200}

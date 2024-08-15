@@ -11,21 +11,33 @@ export default function LocalSwitcher() {
   const router = useRouter();
   const localActive = useLocale();
 
-  console.log(localActive);
-
-  const onSelectChange = (lang: string) => {
-    const nextLocale = lang;
-    startTransition(() => {
-      router.replace(`/${nextLocale}`);
-    });
-  };
-
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState(localActive);
 
   useEffect(() => {
     setSelectedLang(localActive);
   }, [localActive]);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const dropdownElement = document.getElementById('dropdown-menu');
+      const buttonElement = document.getElementById('dropdown-button');
+
+      if (
+        dropdownOpen &&
+        event.target instanceof Node &&
+        !dropdownElement?.contains(event.target) &&
+        !buttonElement?.contains(event.target)
+      ) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [dropdownOpen]);
 
   const languages = [
     {
@@ -51,22 +63,29 @@ export default function LocalSwitcher() {
   ];
 
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+  
+
   const handleSelect = (lang: string) => {
     setSelectedLang(lang);
-    onSelectChange(lang);
+    const currentPath = window.location.pathname;
+    startTransition(() => {
+      router.replace(`/${lang}${currentPath}`);
+    });
     setDropdownOpen(false);
   };
+
 
   return (
     <div>
       <button  
+       id="dropdown-button"
        onClick={toggleDropdown}
        className="inline-flex justify-center w-12 px-4 py-2   border border-text rounded-md shadow-sm hover:bg-gray-50">
         {languages.find(lang => lang.code === localActive)?.icon}
       </button>
 
       {dropdownOpen && (
-        <div className="origin-top-right absolute right-0 mt-2 w-30 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+        <div id="dropdown-menu" className="origin-top-right absolute right-0 mt-2 w-30 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             {languages.map((lang) => (
               <button
