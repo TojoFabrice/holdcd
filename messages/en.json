@@ -30,5 +30,8 @@
             "reability": "Reability",
             "costTimeSaving": "Cost and Time Savings"
         }
+    },
+    "Service": {
+        "title": "Our service"
     }
 }

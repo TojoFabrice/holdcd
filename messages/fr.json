@@ -30,5 +30,8 @@
             "reability": "Fiabilité",
             "costTimeSaving": "Economies de coûts et de temps"
         }
+    },
+    "Service": {
+        "title": "Nos services"
     }
 }
