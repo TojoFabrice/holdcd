@@ -19,7 +19,10 @@
             "paraph1": "For over two decades, HOLD CD has specialized in the procurement of industrial supplies, raw materials, and MRO parts for industrial companies worldwide.",
             "paraph2": "We have cultivated a vast network of suppliers in the European and North American markets, enabling our company to access timely and reliable information, as well as favorable pricing and delivery terms.",
             "paraph3": "Our clients opt to delegate a portion of their procurement process to HOLD CD to streamline operations and enhance efficiency. This translates to:",
-            "list": ["prompt information,", "product availability,", "cost-effectiveness,", "…or a combination of these benefits."],
+            "li1": "prompt information,",
+            "li2": "product availability,",
+            "li3": "cost-effectiveness,",
+            "li4": "…or a combination of these benefits.",
             "paraph4": "No matter where you are in the world, simply send an email with the required references, and our experts will provide a consolidated quote within 24 to 48 hours. All references, even from different suppliers, will be unified into a single process: one quote, one package, one streamlined import process."
         }
     },

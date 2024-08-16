@@ -1,9 +1,15 @@
+'use client'
 import { useTranslations } from 'next-intl';
 import React from 'react'
+
 
 function AboutSection() {
 
   const t = useTranslations('About');
+  const listItems = t('content.list');
+
+  console.log(listItems);
+  
   
   return (
     <section id="about" className="bg-[#F9F8F8] p-10 mt-16 m-auto">
@@ -18,16 +24,13 @@ function AboutSection() {
       {t("content.paraph2")} <br></br><br></br>
       {t("content.paraph3")}
       <ul className="list-disc ml-10">
-        {
-          
-        }
-        <li>une transmission rapide des informations,</li>
-        <li>la disponibilité des produits,</li>
-        <li>une rentabilité accrue,</li>
-        <li>…ou une combinaison de ces avantages.</li>
+        <li>{t("content.li1")}</li>
+        <li>{t("content.li2")}</li>
+        <li>{t("content.li3")}</li>
+        <li>{t("content.li4")}</li>
       </ul>
       <br></br>
-      Peu importe où vous vous trouvez dans le monde, il vous suffit d&apos;envoyer un courriel avec les références nécessaires, et nos experts vous fourniront une offre globale dans un délai de 24 à 48 heures. Toutes les références, même provenant de différents fournisseurs, seront intégrées en un seul processus : une seule offre, un seul colis et un processus d&apos;importation simplifié.
+      {t("content.paraph4")}
 
       </div>
     </section>

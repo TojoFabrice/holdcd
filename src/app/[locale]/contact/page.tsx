@@ -1,10 +1,22 @@
+"use client"
 import { useTranslations } from 'next-intl';
+import Image from "next/image";
 import React from 'react'
 
 function ContactPage() {
 
     const t = useTranslations('Contact');
 
+    const latitude = 48.8584; // Example latitude (Eiffel Tower, Paris)
+    const longitude = 2.2945; // Example longitude (Eiffel Tower, Paris)
+    const redirectToGoogleMapsWithMarker = (latitude: number, longitude: number): any => {
+        const url = `https://www.google.com/maps?q=${latitude},${longitude}&t=&z=13&ie=UTF8&iwloc=&output=embed&markers=color:red%7C${latitude},${longitude}`;
+        window.open(url, '_blank');
+    }
+
+    const handleRedirect = () => {
+        redirectToGoogleMapsWithMarker(latitude, longitude);
+    };
 
     return (
         <section
@@ -22,7 +34,7 @@ function ContactPage() {
             </div>
 
             <div className='flex'>
-                <div className='w-1/3 bg-fondContact px-6 py-10'>
+                <div className='w-2/5 bg-fondContact px-6 py-10'>
                     <form className=''>
                         <label className="input  mb-4 flex items-center gap-2">
                             <svg
@@ -57,7 +69,18 @@ function ContactPage() {
                         </div>
                     </form>
                 </div>
-                <div className='w-1/3 bg-grayFonced px-6 py-10'>
+                <div className='w-2/5 bg-grayFonced px-6 py-10'>
+                </div>
+                <div className='w-3/5'>
+                    <div className="relative w-full h-full cursor-pointer" onClick={handleRedirect} >
+                        <Image
+                             src="/images/carte.png"
+                            alt="carte"
+                            layout="fill"
+                            objectFit="cover"
+                            quality={100}
+                        />
+                    </div>
                 </div>
             </div>
 
@@ -66,3 +89,5 @@ function ContactPage() {
 }
 
 export default ContactPage
+
+
