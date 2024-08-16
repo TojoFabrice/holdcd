@@ -85,7 +85,7 @@ export default function LocalSwitcher() {
       </button>
 
       {dropdownOpen && (
-        <div id="dropdown-menu" className="origin-top-right absolute right-0 mt-2 w-30 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+        <div id="dropdown-menu" className="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             {languages.map((lang) => (
               <button

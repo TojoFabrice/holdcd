@@ -100,10 +100,9 @@ export default function Header() {
 
           <div className="flex w-full items-center justify-end px-4">
             <div>
-              <div className='mr-20 block lg:hidden'>
+              <div className='absolute right-20 top-1/2 translate-y-[-50%] block lg:hidden'>
                 <LocalSwitcher />
               </div>
-
 
               <button
                 onClick={navbarToggleHandler}
