@@ -1,15 +1,9 @@
-'use client'
 import { useTranslations } from 'next-intl';
 import React from 'react'
-
 
 function AboutSection() {
 
   const t = useTranslations('About');
-  const listItems = t('content.list');
-
-  console.log(listItems);
-  
   
   return (
     <section id="about" className="bg-[#F9F8F8] p-10 mt-16 m-auto">

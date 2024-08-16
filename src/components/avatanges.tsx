@@ -13,12 +13,12 @@ function Avatanges() {
                 <span className="w-full bg-minibar h-[2px] block my-5"></span>
             </div>
             <div className='flex flex-col md:flex-row gap-14 mt-8'>
-                <Card />
-                <Card />
-                <Card />
+                <Card image='/images/card/simplicity.png' title={t("card.simplicity.title")}  c1={t("card.simplicity.content.c1")} c2={t("card.simplicity.content.c2")}/>
+                <Card image='/images/card/fiable.png' title={t("card.reability.title")}  c1={t("card.reability.content.c1")} c2={t("card.reability.content.c2")}/>
+                <Card image='/images/card/time.png' title={t("card.costTimeSaving.title")}  c1={t("card.costTimeSaving.content.c1")} />
             </div>
-            <div className='text-text text-center mt-10 text-xl font-light'>
-                Laissez-nous prendre en charge les tâches fastidieuses d’approvisionnement, libérant ainsi vos ressources et vos efforts pour des activités qui apportent une réelle valeur ajoutée à votre entreprise.
+            <div className='text-title text-center mt-14 text-xl font-semibold'>
+                {t('card.resume')}
             </div>
         </section>
     )

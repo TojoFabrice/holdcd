@@ -29,9 +29,27 @@
     "Advantage": {
         "title": "Advantages",
         "card": {
-            "simplicity": "Simplicity",
-            "reability": "Reability",
-            "costTimeSaving": "Cost and Time Savings"
+            "simplicity": {
+                "title" : "Simplicity",
+                "content": {
+                    "c1": "One Point of Contact throughout the entire process, from your Request for Quotation to delivery.",
+                    "c2": "We are proficient in multiple languages for seamless communication."
+                }
+            }, 
+            "reability":  {
+                "title" : "Reliability",
+                "content": {
+                    "c1": "Prior to shipping, deliveries are meticulously inspected to prevent errors upon arrival.",
+                    "c2": "We ensure compliance with international regulations."
+                }
+            }, 
+            "costTimeSaving": {
+                "title" : "Cost and Time Savings",
+                "content": {
+                    "c1": "Our extensive network of trusted suppliers guarantees competitive pricing and timely delivery."
+                }
+            },
+            "resume": "Let us assist you with the burdensome procurement tasks, freeing up your resources and efforts for activities that truly add value to your company."  
         }
     },
     "Service": {

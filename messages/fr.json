@@ -27,11 +27,29 @@
         }
     },
     "Advantage": {
-        "title": "avantages",
+        "title": "Avantages",
         "card": {
-            "simplicity": "Simplicité",
-            "reability": "Fiabilité",
-            "costTimeSaving": "Economies de coûts et de temps"
+            "simplicity": {
+                "title" : "Simplicité",
+                "content": {
+                    "c1": "Un seul point de contact tout au long du processus, depuis votre demande de devis jusqu’à la livraison.",
+                    "c2": "Nous maîtrisons plusieurs langues pour assurer une communication fluide."
+                }
+            }, 
+            "reability":  {
+                "title" : "Fiabilité",
+                "content": {
+                    "c1": "Avant l’expédition, les livraisons sont méticuleusement inspectées afin de prévenir toute erreur à l’arrivée.",
+                    "c2": "Nous garantissons la conformité avec les réglementations internationales."
+                }
+            }, 
+            "costTimeSaving": {
+                "title" : "Economies de coûts et de temps",
+                "content": {
+                    "c1": "Notre vaste réseau de fournisseurs de confiance assure des prix compétitifs et une livraison ponctuelle."
+                }
+            },
+            "resume": "Laissez-nous prendre en charge les tâches fastidieuses d’approvisionnement, libérant ainsi vos ressources et vos efforts pour des activités qui apportent une réelle valeur ajoutée à votre entreprise." 
         }
     },
     "Service": {
