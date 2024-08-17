@@ -27,7 +27,7 @@ function Service({
         <div>
             {
                 positionImage == 'left' ?
-                    <div className='flex flex-col items-center justify-start md:flex-row md:justify-between gap-8'>
+                    <div className='flex flex-col items-center justify-start md:flex-row md:justify-between gap-8 mt-9'>
                         <div className='w-full flex justify-center md:w-1/3'>
                             <Image
                                 src={image}
@@ -52,7 +52,7 @@ function Service({
                         </div>
                     </div>
                     :
-                    <div className='flex flex-col-reverse items-center justify-start md:flex-row md:justify-between gap-8'>
+                    <div className='flex flex-col-reverse items-center justify-start md:flex-row md:justify-between gap-8 mt-9'>
                         <div className='w-full mb-20 md:w-2/3 md:mb-0'>
                             <div className='text-title font-semibold'>{title}</div>
                             <div>

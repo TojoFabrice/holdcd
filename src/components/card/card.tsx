@@ -14,7 +14,7 @@ function Card({
 }) {
 
     return (
-        <div className="card bg-base-100 w-96 shadow-xl">
+        <div className="card w-96 shadow-xl bg-primary">
             <figure>
                 <Image
                     src={image}
@@ -24,12 +24,12 @@ function Card({
                     layout="responsive"
                 />
             </figure>
-            <div className="card-body text-text">
+            <div className="card-body text-text ">
                 <h2 className="card-title justify-center text-title">
                     {title}
                 </h2>
                 <div>
-                    <ul className="">
+                    <ul className="text-minibar">
                         <li className='text-center'>{c1}</li>
                         <li className='text-center mt-3'>{c2}</li>
                     </ul>

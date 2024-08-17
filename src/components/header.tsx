@@ -128,7 +128,7 @@ export default function Header() {
                 id="navbarCollapse"
                 className={`navbar absolute right-0 z-30 w-full rounded border-[.5px] border-body-color/50  px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 
                     ${navbarOpen
-                    ? "visibility top-full opacity-80 bg-primary"
+                    ? "visibility top-full opacity-80 bg-primary flex flex-col items-center"
                     : "invisible top-[120%] opacity-0"
                   }
                   `}
@@ -140,10 +140,10 @@ export default function Header() {
                       <li key={index} className="group relative">
                         <Link
                           href={menuItem.path}
-                          className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 
+                          className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 justify-center
                             ${usePathName === menuItem.path
                               ? "text-secondary hover:text-white"
-                              : "text-white hover:text-secondary"
+                              : (sticky || navbarOpen ? "text-white hover:text-secondary" : "text-primary hover:text-secondary")
                             }`}
                         >
                           {menuItem.title}
