@@ -10,15 +10,15 @@ export default function HomePage() {
     <div>
       
       <div className=''>
-        <div className='w-4/5 m-auto'>
+        <div className='m-auto'>
           <AboutSection />
         </div>
 
-        <div className='w-4/5 m-auto'>
+        <div className='m-auto bg-primary'>
           <Avatanges />
         </div>
 
-        <div className='w-4/5 m-auto'>
+        <div className='m-auto'>
           <HowItWork />
         </div>
         

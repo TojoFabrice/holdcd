@@ -1,21 +1,22 @@
 import React from 'react'
 import Image from "next/image";
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 function HowItWork() {
 
     const localActive = useLocale()
+    const t = useTranslations('howItWork');
 
     return (
-        <section id="howToWork" className="bg-[#F9F8F8] p-10 mt-16 m-auto">
+        <section id="howToWork" className="bg-[#F9F8F8] p-10 md:px-20 md:py-16  m-auto">
             <div>
                 <div className="text-title	text-3xl font-medium">
-                    Comment ça marche?
+                    {t('title')}
                 </div>
                 <span className="w-full bg-minibar h-[2px] block my-5"></span>
             </div>
             <div className='flex justify-center'>
-                <div className='w-full'>
+                <div className='w-full flex justify-center'>
                     {/* <div className='w-full flex justify-start'>
                         <table className='text-text'>
                             <thead>

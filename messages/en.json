@@ -30,30 +30,67 @@
         "title": "Advantages",
         "card": {
             "simplicity": {
-                "title" : "Simplicity",
+                "title": "Simplicity",
                 "content": {
                     "c1": "One Point of Contact throughout the entire process, from your Request for Quotation to delivery.",
                     "c2": "We are proficient in multiple languages for seamless communication."
                 }
-            }, 
-            "reability":  {
-                "title" : "Reliability",
+            },
+            "reability": {
+                "title": "Reliability",
                 "content": {
                     "c1": "Prior to shipping, deliveries are meticulously inspected to prevent errors upon arrival.",
                     "c2": "We ensure compliance with international regulations."
                 }
-            }, 
+            },
             "costTimeSaving": {
-                "title" : "Cost and Time Savings",
+                "title": "Cost and Time Savings",
                 "content": {
                     "c1": "Our extensive network of trusted suppliers guarantees competitive pricing and timely delivery."
                 }
             },
-            "resume": "Let us assist you with the burdensome procurement tasks, freeing up your resources and efforts for activities that truly add value to your company."  
+            "resume": "Let us assist you with the burdensome procurement tasks, freeing up your resources and efforts for activities that truly add value to your company."
         }
     },
+    "howItWork": {
+        "title": "How it work ?"
+    },
     "Service": {
-        "title": "Our service"
+        "title": "Our Services",
+        "purchasing": {
+            "title": "Purchasing",
+            "content": {
+                "c1": "Global Sourcing: HOLD CD specializes in procuring spare parts, equipment, and raw materials for various industries worldwide.",
+                "c2": "Benefitting from longstanding relationships, HOLD CD provides the most favorable terms and conditions for pricing and delivery. ",
+                "c3": "HOLD CD excels in sourcing discontinued references and elusive parts that are challenging to find.",
+                "c4": "With a dedicated process, HOLD CD can also ensure the safe delivery of hazardous materials."
+            }
+        },
+        "technicalAdvice": {
+            "title": "Technical Advice",
+            "content": {
+                "c1": "HOLD CD offers technical guidance to address challenges you encounter.",
+                "c2": "We can suggest alternative references if needed.",
+                "c3": "Upon request, we can provide solutions for delivery to your desired destination."
+            }
+        },
+        "monitoringControl": {
+            "title": "Monitoring & Control",
+            "content": {
+                "c1": "Your materials are received at our warehouses.",
+                "c2": "Every item undergoes thorough inspection before packaging to prevent errors upon delivery.",
+                "c3": "You can track the progress of your order and request partial forwarding if necessary."
+            }
+        },
+        "sendingProcess": {
+            "title": "Sending process",
+            "content": {
+                "c1": "All products sourced from various suppliers will be consolidated into a single box, most of the time recycled, offering both process simplification and a reduction in carbon footprint.",
+                "c2": "A packing list, including your purchase order reference and item details, will be provided to facilitate your oversight.",
+                "c3": "We can customize all documents to accommodate any special requests you may have.",
+                "c4": "All shipping requirements will be met to streamline your customs procedures."
+            }
+        }
     },
     "Contact": {
         "title": "Contact us"

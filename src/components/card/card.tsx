@@ -14,7 +14,7 @@ function Card({
 }) {
 
     return (
-        <div className="card bg-base-100 w-full shadow-xl">
+        <div className="card bg-base-100 w-96 shadow-xl">
             <figure>
                 <Image
                     src={image}

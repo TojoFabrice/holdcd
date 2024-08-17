@@ -52,8 +52,45 @@
             "resume": "Laissez-nous prendre en charge les tâches fastidieuses d’approvisionnement, libérant ainsi vos ressources et vos efforts pour des activités qui apportent une réelle valeur ajoutée à votre entreprise." 
         }
     },
+    "howItWork": {
+        "title": "Comment ça marche ?"
+    },
     "Service": {
-        "title": "Nos services"
+        "title": "Nos services",
+        "purchasing": {
+            "title": "Achats",
+            "content": {
+                "c1": "Approvisionnement Mondial : Hold CD se spécialise dans l'approvisionnement de pièces détachées, d’équipements et de matières premières pour diverses industries à travers le monde.",
+                "c2": "Grâce à des relations de longue date, Hold CD propose les conditions les plus avantageuses en termes de prix et de livraison.",
+                "c3": "Hold CD excelle dans la recherche de références obsolètes et de pièces rares difficiles à trouver.",
+                "c4": "Avec un processus dédié, Hold CD garantit également la livraison sécurisée de matériaux dangereux."
+            }
+        },
+        "technicalAdvice": {
+            "title": "Conseil et assistance Technique",
+            "content": {
+                "c1": "Hold CD offre des conseils techniques pour résoudre les défis que vous rencontrez.",
+                "c2": "Nous pouvons proposer des références alternatives si nécessaire.",
+                "c3": "Sur demande, nous pouvons fournir des solutions pour la livraison à votre destination souhaitée."
+            }
+        },
+        "monitoringControl": {
+            "title": "Suivi et Contrôle",
+            "content": {
+                "c1": "Réception et Contrôle des Matériaux : Vos matériaux sont reçus dans nos entrepôts.",
+                "c2": "Chaque article fait l'objet d'une inspection rigoureuse avant l'emballage afin de prévenir toute erreur à la livraison.",
+                "c3": "Vous pouvez suivre l'avancement de votre commande et demander un envoi partiel si nécessaire."
+            }
+        },
+        "sendingProcess": {
+            "title": "Suivi et Contrôle",
+            "content": {
+                "c1": "Consolidation des Produits : Tous les produits provenant de divers fournisseurs seront regroupés dans un seul colis, la plupart du temps recyclée, offrant à la fois une simplification du processus et une réduction de l'empreinte carbone.",
+                "c2": "Une liste de colisage, incluant la référence de votre commande d’achat et les détails des articles, sera fournie pour faciliter votre contrôle.",
+                "c3": "Nous pouvons personnaliser tous les documents pour répondre à vos demandes spéciales.",
+                "c4": "Toutes les exigences d'expédition seront respectées pour simplifier vos procédures douanières."
+            }
+        }
     },
     "Contact": {
         "title": "Contactez nous"

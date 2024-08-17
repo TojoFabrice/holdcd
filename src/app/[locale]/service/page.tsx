@@ -8,7 +8,7 @@ function TotoPage() {
 
   return (
     <section
-      className="bg-service-bg p-10 mt-16 w-4/5 m-auto"
+      className="bg-service-bg p-10 my-16 w-4/5 m-auto"
       style={{
         boxShadow: 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px',
       }}
@@ -20,10 +20,42 @@ function TotoPage() {
         <span className="w-full bg-minibar h-[2px] block my-5"></span>
       </div>
       <div className="text-xl text-text font-light">
-        <Service positionImage='left' image="/images/b2b.jpg" />
-        <Service positionImage='right' image="/images/conseil.jpg" />
-        <Service positionImage='left' image="/images/suivi.jpg" />
-        <Service positionImage='right' image="/images/Mail-sent.jpg" />
+        <Service
+          positionImage='left'
+          image="/images/b2b.jpg"
+          title={t("purchasing.title")}
+          c1={t("purchasing.content.c1")}
+          c2={t("purchasing.content.c2")}
+          c3={t("purchasing.content.c3")}
+          c4={t("purchasing.content.c4")}
+        />
+        <Service
+          positionImage='right'
+          image="/images/conseil.jpg"
+          title={t("technicalAdvice.title")}
+          c1={t("technicalAdvice.content.c1")}
+          c2={t("technicalAdvice.content.c2")}
+          c3={t("technicalAdvice.content.c3")}
+
+
+        />
+        <Service
+          positionImage='left'
+          image="/images/suivi.jpg"
+          title={t("monitoringControl.title")}
+          c1={t("monitoringControl.content.c1")}
+          c2={t("monitoringControl.content.c2")}
+          c3={t("monitoringControl.content.c3")}
+
+        />
+        <Service positionImage='right'
+          image="/images/Mail-sent.jpg"
+          title={t("sendingProcess.title")}
+          c1={t("sendingProcess.content.c1")}
+          c2={t("sendingProcess.content.c2")}
+          c3={t("sendingProcess.content.c3")}
+          c4={t("sendingProcess.content.c4")} 
+        />
       </div>
     </section>
   )
