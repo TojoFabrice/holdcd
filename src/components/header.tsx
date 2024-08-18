@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 import { Menu } from '@/types/menu';
 
 
-
 export default function Header() {
   const [sticky, setSticky] = useState(false);
 

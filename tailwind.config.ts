@@ -24,7 +24,8 @@ const config: Config = {
       "black": "#000",
       "fondContact": "#F6F6F6",
       "grayFonced": "#232323",
-      'service-bg': "#FEFEFE"
+      'service-bg': "#FEFEFE",
+      'whatsapp-color': "#64B161"
     }
   },
   plugins: [

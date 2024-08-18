@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from "next/image";
+import { motion, Variants } from "framer-motion";
+
 
 function Card({
     image, 
@@ -13,8 +15,24 @@ function Card({
     c2?: string
 }) {
 
+    const cardVariants: Variants = {
+        offscreen: {
+          y: 500
+        },
+        onscreen: {
+          y: 0,
+          transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.8
+          }
+        }
+      };
+
     return (
-        <div className="card w-96 shadow-xl bg-primary">
+        <motion.div 
+        className="card w-96 shadow-xl bg-primary"
+        variants={cardVariants}>
             <figure>
                 <Image
                     src={image}
@@ -35,7 +53,7 @@ function Card({
                     </ul>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

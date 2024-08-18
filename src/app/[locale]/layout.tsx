@@ -4,8 +4,10 @@ import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { NextIntlClientProvider } from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import { getMessages } from 'next-intl/server';
 import Hero from '@/components/hero';
+import Chat from '@/components/chat/chat';
+
 
 
 const inter = Inter({ subsets: ['latin'] });
@@ -21,7 +23,7 @@ interface RootLayoutProps {
     locale: string;
   };
 }
-export default async  function RootLayout({
+export default async function RootLayout({
   children,
   params: { locale },
 }: Readonly<RootLayoutProps>) {
@@ -32,13 +34,14 @@ export default async  function RootLayout({
     <html lang={locale}>
       <body className={inter.className}>
 
-          <NextIntlClientProvider messages={messages}>
-            <Header />
-            <Hero />
-            {children}
-            <Footer />
-          </NextIntlClientProvider>
-       
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          <Hero />
+          <Chat />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
+
       </body>
     </html>
   );
