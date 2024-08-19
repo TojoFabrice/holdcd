@@ -23,6 +23,7 @@ function TotoPage() {
         <Service
           positionImage='left'
           image="/images/b2b.jpg"
+          icon="/icons/achat.png"
           title={t("purchasing.title")}
           c1={t("purchasing.content.c1")}
           c2={t("purchasing.content.c2")}
@@ -32,6 +33,7 @@ function TotoPage() {
         <Service
           positionImage='right'
           image="/images/conseil.jpg"
+          icon="/icons/soutien-technique.png"
           title={t("technicalAdvice.title")}
           c1={t("technicalAdvice.content.c1")}
           c2={t("technicalAdvice.content.c2")}
@@ -42,6 +44,7 @@ function TotoPage() {
         <Service
           positionImage='left'
           image="/images/suivi.jpg"
+          icon="/icons/controle.png"
           title={t("monitoringControl.title")}
           c1={t("monitoringControl.content.c1")}
           c2={t("monitoringControl.content.c2")}
@@ -50,6 +53,7 @@ function TotoPage() {
         />
         <Service positionImage='right'
           image="/images/Mail-sent.jpg"
+          icon="/icons/processus.png"
           title={t("sendingProcess.title")}
           c1={t("sendingProcess.content.c1")}
           c2={t("sendingProcess.content.c2")}

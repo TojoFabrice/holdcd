@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 function Service({
     positionImage,
     image,
+    icon,
     title,
     c1,
     c2,
@@ -14,6 +15,7 @@ function Service({
 }: {
     positionImage: string,
     image: string,
+    icon: string,
     title: string,
     c1: string,
     c2: string,
@@ -37,7 +39,15 @@ function Service({
                             />
                         </div>
                         <div className='w-full mb-20 md:w-2/3 md:mb-0'>
-                            <div className='text-title font-semibold'>{title}</div>
+                            <div className='flex items-center gap-3 mb-2'>
+                                <Image
+                                    src={icon}
+                                    alt="logo"
+                                    width={24}
+                                    height={24}
+                                />
+                                <div className='text-title font-semibold'>{title}</div>
+                            </div>
                             <div>
                                 <ul className="list-disc ml-5">
                                     <li>{c1}</li>
@@ -54,7 +64,15 @@ function Service({
                     :
                     <div className='flex flex-col-reverse items-center justify-start md:flex-row md:justify-between gap-8 mt-9'>
                         <div className='w-full mb-20 md:w-2/3 md:mb-0'>
-                            <div className='text-title font-semibold'>{title}</div>
+                            <div className='flex items-center gap-5 mb-2'>
+                                <Image
+                                    src={icon}
+                                    alt="logo"
+                                    width={24}
+                                    height={24}
+                                />
+                                <div className='text-title font-semibold'>{title}</div>
+                            </div>
                             <div>
                                 <ul className="list-disc ml-5">
                                     <li>{c1}</li>

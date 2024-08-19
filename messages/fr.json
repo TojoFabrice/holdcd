@@ -83,7 +83,7 @@
             }
         },
         "sendingProcess": {
-            "title": "Suivi et Contrôle",
+            "title": "Processus d’envoi",
             "content": {
                 "c1": "Consolidation des Produits : Tous les produits provenant de divers fournisseurs seront regroupés dans un seul colis, la plupart du temps recyclée, offrant à la fois une simplification du processus et une réduction de l'empreinte carbone.",
                 "c2": "Une liste de colisage, incluant la référence de votre commande d’achat et les détails des articles, sera fournie pour faciliter votre contrôle.",
