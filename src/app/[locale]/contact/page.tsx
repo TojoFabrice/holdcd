@@ -7,6 +7,8 @@ function ContactPage() {
 
     const t = useTranslations('Contact');
 
+    const name = t('name')
+
     const latitude = 48.8584; // Example latitude (Eiffel Tower, Paris)
     const longitude = 2.2945; // Example longitude (Eiffel Tower, Paris)
     const redirectToGoogleMapsWithMarker = (latitude: number, longitude: number): any => {
@@ -46,7 +48,7 @@ function ContactPage() {
                                     <path
                                         d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
                                 </svg>
-                                <input type="text" className="grow" placeholder="Username" />
+                                <input type="text" className="grow" placeholder={name} />
                             </label>
                             <label className="input mb-4 flex items-center gap-2">
                                 <svg
@@ -66,7 +68,7 @@ function ContactPage() {
                                 className="textarea mb-4 textarea-sm w-full">
                             </textarea>
                             <div className='flex justify-center'>
-                                <button className="btn btn-secondary text-white">Envoyer</button>
+                                <button className="btn btn-secondary text-white">{t('send')}</button>
                             </div>
                         </form>
                     </div>

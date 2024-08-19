@@ -5,7 +5,7 @@
     "Navigation": {
         "home": "Home",
         "about": "About",
-        "advantage": "advantage",
+        "advantage": "Advantage",
         "howTowork": "How it work",
         "service": "Our services",
         "contact": "Contact"
@@ -93,6 +93,8 @@
         }
     },
     "Contact": {
-        "title": "Contact us"
+        "title": "Contact us",
+        "name": "Username",
+        "send": "Send"
     }
 }

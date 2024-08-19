@@ -93,6 +93,8 @@
         }
     },
     "Contact": {
-        "title": "Contactez nous"
+        "title": "Contactez-nous",
+        "name": "Nom",
+        "send": "Envoyer"
     }
 }
