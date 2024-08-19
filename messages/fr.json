@@ -2,6 +2,9 @@
     "HomePage": {
         "title": "bonjour"
     },
+    "Hero": {
+        "slogan": "Vos services de sourcing sur le marché européen"
+    },
     "Navigation": {
         "home": "Accueil",
         "about": "A propos",
@@ -18,7 +21,7 @@
         "content": {
             "paraph1": "Depuis plus de deux décennies, Hold CD s'est imposée comme un acteur de référence dans l'approvisionnement en fournitures industrielles, matières premières et pièces de rechange pour les entreprises industrielles, à l'échelle mondiale.",
             "paraph2": "Nous avons tissé un vaste réseau de fournisseurs sur les marchés européens et nord-américains, ce qui nous permet d'accéder à des informations précises et fiables en un temps réduit, ainsi qu'à des conditions tarifaires et de livraison avantageuses.",
-            "paraph3": "Nos clients choisissent de déléguer une partie de leur processus d'approvisionnement à Hold CD pour rationaliser leurs opérations et améliorer leur efficacité. Cela se traduit par:",
+            "paraph3": "Nos clients choisissent de déléguer une partie de leur processus d'approvisionnement à Hold CD pour rationaliser leurs opérations et améliorer leur efficacité. Cela se traduit par :",
             "li1": "une transmission rapide des informations,",
             "li2": "la disponibilité des produits,",
             "li3": "une rentabilité accrue,",

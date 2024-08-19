@@ -2,6 +2,9 @@
     "HomePage": {
         "title": "Hello world!"
     },
+    "Hero": {
+        "slogan": "Your European Market Sourcing Services"
+    },
     "Navigation": {
         "home": "Home",
         "about": "About",
@@ -18,7 +21,7 @@
         "content": {
             "paraph1": "For over two decades, HOLD CD has specialized in the procurement of industrial supplies, raw materials, and MRO parts for industrial companies worldwide.",
             "paraph2": "We have cultivated a vast network of suppliers in the European and North American markets, enabling our company to access timely and reliable information, as well as favorable pricing and delivery terms.",
-            "paraph3": "Our clients opt to delegate a portion of their procurement process to HOLD CD to streamline operations and enhance efficiency. This translates to:",
+            "paraph3": "Our clients opt to delegate a portion of their procurement process to HOLD CD to streamline operations and enhance efficiency. This translates to :",
             "li1": "prompt information,",
             "li2": "product availability,",
             "li3": "cost-effectiveness,",
