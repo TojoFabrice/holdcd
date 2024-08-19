@@ -39,7 +39,7 @@ export default function HomePage() {
           <AboutSection />
         </div>
 
-        <div className='m-auto bg-primary' id='advantage' ref={advantagesRef}>
+        <div className='m-auto bg-[#F0F1EF]' id='advantage' ref={advantagesRef}>
           <Avatanges />
         </div>
 

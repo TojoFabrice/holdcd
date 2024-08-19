@@ -44,15 +44,15 @@ function Card({
                     layout="responsive"
                 />
             </figure>
-            <div className="card-body text-text ">
-                <h2 className="card-title justify-center text-title">
+            <div className="card-body text-text md:h-96 lg:h-64 h-60">
+                <h2 className="card-title justify-center text-center text-secondary text-xl md:text-xl">
                     {title}
                 </h2>
-                <div>
-                    <ul className="text-minibar">
-                        <li className='text-center'>{c1}</li>
-                        <li className='text-center mt-3'>{c2}</li>
-                    </ul>
+                <div className="text-minibar md:text-sm xl:text-base">
+                    {/* <ul className="text-minibar md:text-sm xl:text-lg"> */}
+                        <div className='text-center'>{c1}</div>
+                        <div className='text-center mt-3'>{c2}</div>
+                    {/* </ul> */}
                 </div>
             </div>
         </motion.div>

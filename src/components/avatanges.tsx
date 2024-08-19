@@ -10,7 +10,7 @@ function Avatanges() {
     return (
         <section className='p-10 md:px-20 md:py-16 '>
             <div>
-                <div className="text-minibar text-3xl font-medium">
+                <div className="text-title text-3xl font-medium">
                     {t("title")}
                 </div>
                 <span className="w-full bg-minibar h-[2px] block my-5"></span>
@@ -25,7 +25,7 @@ function Avatanges() {
                 <Card image='/images/card/fiable.png' title={t("card.reability.title")}  c1={t("card.reability.content.c1")} c2={t("card.reability.content.c2")}/>
                 <Card image='/images/card/time.png' title={t("card.costTimeSaving.title")}  c1={t("card.costTimeSaving.content.c1")} />
             </motion.div>
-            <div className='text-minibar text-center mt-14 text-xl font-semibold'>
+            <div className='text-title text-center mt-14 text-xl font-semibold'>
                 {t('card.resume')}
             </div>
         </section>
