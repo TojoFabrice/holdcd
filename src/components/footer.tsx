@@ -3,13 +3,14 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { Menu } from '@/types/menu';
-
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Footer() {
   const t = useTranslations('Footer');
   const tn = useTranslations('Navigation');
+
+  const router = useRouter();
 
   const menuData: Menu[] = [
     {
@@ -21,20 +22,23 @@ export default function Footer() {
     {
       id: 2,
       title: tn('about'),
-      path: "#about",
+      path: "/#about",
       newTab: false,
+      sectionId: "about"
     },
     {
       id: 3,
       title: tn('advantage'),
-      path: "#advantage",
+      path: "/#advantage",
       newTab: false,
+      sectionId: "advantage"
     },
     {
       id: 4,
       title: tn('howTowork'),
-      path: "#howToWork",
+      path: "/#howToWork",
       newTab: false,
+      sectionId: "howTowork"
     },
     {
       id: 5,
@@ -53,6 +57,30 @@ export default function Footer() {
   const usePathName = usePathname();
 
   const currentYear = new Date().getFullYear();
+
+  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, menuItem: Menu) => {
+    e.preventDefault();
+    const { sectionId, path } = menuItem;
+
+    if (usePathName === '/' && sectionId) {
+      if (sectionId) {
+        // Scroll to the section if sectionId is provided
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const offsetTop = element.offsetTop - 70;
+          window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        }
+      } else {
+        // Scroll to the top if no sectionId is provided
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    } else {
+      // If on a different page, navigate to the correct page first
+      if (path) {
+        router.push(path);
+      }
+    }
+  };
 
 
   return (
@@ -74,6 +102,7 @@ export default function Footer() {
                 <li key={index} className="group relative">
                   <Link
                     href={menuItem.path}
+                    onClick={(e) => menuItem.sectionId && handleScrollToSection(e, menuItem)}
                     className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 justify-center
                             ${usePathName === menuItem.path
                         ? "text-secondary hover:text-white"
