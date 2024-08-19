@@ -17,14 +17,16 @@ function Card({
 
     const cardVariants: Variants = {
         offscreen: {
-          y: 500
+          y: 500,
+          opacity: 0,
         },
         onscreen: {
           y: 0,
+          opacity: 1,
           transition: {
             type: "spring",
             bounce: 0.4,
-            duration: 0.8
+            duration: 1.2
           }
         }
       };

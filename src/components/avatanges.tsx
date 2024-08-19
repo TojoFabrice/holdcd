@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 function Avatanges() {
     const t = useTranslations('Advantage');
     return (
-        <section id='advantage' className='p-10 md:px-20 md:py-16 '>
+        <section className='p-10 md:px-20 md:py-16 '>
             <div>
                 <div className="text-minibar text-3xl font-medium">
                     {t("title")}

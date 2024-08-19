@@ -4,20 +4,59 @@ import Link from 'next/link';
 import LocalSwitcher from './local-switcher';
 import { useEffect, useState } from 'react';
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Menu } from '@/types/menu';
 
 
 export default function Header() {
   const [sticky, setSticky] = useState(false);
-
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
+
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
 
   const t = useTranslations('Navigation');
+  const usePathName = usePathname();
+  const router = useRouter();
+
+
+  const handleStickyNavbar = () => {
+    if (window.scrollY >= 80) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
+  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, menuItem: Menu) => {
+    e.preventDefault();
+    const { sectionId, path } = menuItem;
+
+    if (usePathName === '/' && sectionId) {
+      if (sectionId) {
+        // Scroll to the section if sectionId is provided
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const offsetTop = element.offsetTop - 70;
+          window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        }
+      } else {
+        // Scroll to the top if no sectionId is provided
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    } else {
+      // If on a different page, navigate to the correct page first
+      if (path) {
+        router.push(path);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleStickyNavbar);
+  });
 
   const menuData: Menu[] = [
     {
@@ -29,20 +68,23 @@ export default function Header() {
     {
       id: 2,
       title: t('about'),
-      path: "#about",
+      path: "/#about",
       newTab: false,
+      sectionId: "about"
     },
     {
       id: 3,
       title: t('advantage'),
-      path: "#advantage",
+      path: "/#advantage",
       newTab: false,
+      sectionId: "advantage"
     },
     {
       id: 4,
       title: t('howTowork'),
-      path: "#howToWork",
+      path: "/#howToWork",
       newTab: false,
+      sectionId: "howTowork"
     },
     {
       id: 5,
@@ -57,21 +99,6 @@ export default function Header() {
       newTab: false,
     }
   ]
-
-  const handleStickyNavbar = () => {
-    if (window.scrollY >= 80) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleStickyNavbar);
-  });
-
-  const usePathName = usePathname();
-
 
   return (
     <header
@@ -139,6 +166,7 @@ export default function Header() {
                       <li key={index} className="group relative">
                         <Link
                           href={menuItem.path}
+                          onClick={(e) => menuItem.sectionId && handleScrollToSection(e, menuItem)}
                           className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 justify-center
                             ${usePathName === menuItem.path
                               ? "text-secondary hover:text-white"

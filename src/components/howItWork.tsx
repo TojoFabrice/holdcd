@@ -8,7 +8,7 @@ function HowItWork() {
     const t = useTranslations('howItWork');
 
     return (
-        <section id="howToWork" className="bg-[#F9F8F8] p-10 md:px-20 md:py-16  m-auto">
+        <section  className="bg-[#F9F8F8] p-10 md:px-20 md:py-16  m-auto">
             <div>
                 <div className="text-title	text-3xl font-medium">
                     {t('title')}
