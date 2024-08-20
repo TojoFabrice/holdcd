@@ -98,6 +98,8 @@
     "Contact": {
         "title": "Contactez-nous",
         "name": "Nom",
-        "send": "Envoyer"
+        "send": "Envoyer",
+        "address": "Adresse",
+        "phone": "Tél"
     }
 }

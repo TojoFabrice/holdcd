@@ -72,7 +72,21 @@ function ContactPage() {
                             </div>
                         </form>
                     </div>
-                    <div className='w-full h-96 md:w-2/5 md:h-auto bg-grayFonced px-6 py-10'>
+                    <div className='flex justify-center w-full h-96 md:w-2/5 md:h-auto bg-grayFonced px-6 py-10'>
+                        <div className='text-text w-60'>
+                            <p><span className='font-semibold'>{t('address')} :</span> Rue de l'Érard Montespan</p>
+                            <p><span className='font-semibold'>Email :</span> holdcd@gmail.com</p>
+                            <p><span className='font-semibold'>{t('phone')} :</span> +231 34 254 89 </p>
+                            <div className='flex justify-center flex-col items-center gap-2 text-text mt-4'>
+                                <p className='font-semibold'>QR Code</p>
+                                <Image
+                                    src="/images/QR.png"
+                                    alt="qrcode"
+                                    width={170}
+                                    height={170}
+                                />
+                            </div>
+                        </div>
                     </div>
                     <div className='w-full h-96 md:w-3/5 md:h-auto'>
                         <div className="relative w-full h-full cursor-pointer" onClick={handleRedirect} >
