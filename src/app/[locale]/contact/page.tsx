@@ -9,8 +9,8 @@ function ContactPage() {
 
     const name = t('name')
 
-    const latitude = 48.8584; // Example latitude (Eiffel Tower, Paris)
-    const longitude = 2.2945; // Example longitude (Eiffel Tower, Paris)
+    const latitude = 45.72038298525782; // Example latitude (Eiffel Tower, Paris)
+    const longitude = 4.959940568350293; // Example longitude (Eiffel Tower, Paris)
     const redirectToGoogleMapsWithMarker = (latitude: number, longitude: number): any => {
         const url = `https://www.google.com/maps?q=${latitude},${longitude}&t=&z=13&ie=UTF8&iwloc=&output=embed&markers=color:red%7C${latitude},${longitude}`;
         window.open(url, '_blank');
@@ -74,9 +74,9 @@ function ContactPage() {
                     </div>
                     <div className='flex justify-center w-full h-96 md:w-2/5 md:h-auto bg-grayFonced px-6 py-10'>
                         <div className='text-text w-60'>
-                            <p><span className='font-semibold'>{t('address')} :</span> Rue de l'Érard Montespan</p>
-                            <p><span className='font-semibold'>Email :</span> holdcd@gmail.com</p>
-                            <p><span className='font-semibold'>{t('phone')} :</span> +231 34 254 89 </p>
+                            <p><span className='font-semibold'>{t('address')} :</span> 9 Rue de Condé 33064 BORDEAUX CEDEX FRANCE</p>
+                            <p><span className='font-semibold'>Email :</span> contact@holdcd.com</p>
+                            <p><span className='font-semibold'>{t('phone')} :</span>  + 33 6 71 94 07 40 </p>
                             <div className='flex justify-center flex-col items-center gap-2 text-text mt-4'>
                                 <p className='font-semibold'>QR Code</p>
                                 <Image
@@ -91,7 +91,7 @@ function ContactPage() {
                     <div className='w-full h-96 md:w-3/5 md:h-auto'>
                         <div className="relative w-full h-full cursor-pointer" onClick={handleRedirect} >
                             <Image
-                                src="/images/carte.png"
+                                src="/images/map.png"
                                 alt="carte"
                                 layout="fill"
                                 objectFit="cover"
