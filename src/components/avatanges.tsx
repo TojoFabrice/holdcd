@@ -21,9 +21,9 @@ function Avatanges() {
                 whileInView="onscreen"
                 viewport={{ once: true, amount: 0.8 }}
             >
-                <Card image='/images/card/simplicity.png' title={t("card.simplicity.title")}  c1={t("card.simplicity.content.c1")} c2={t("card.simplicity.content.c2")}/>
-                <Card image='/images/card/fiable.png' title={t("card.reability.title")}  c1={t("card.reability.content.c1")} c2={t("card.reability.content.c2")}/>
-                <Card image='/images/card/time.png' title={t("card.costTimeSaving.title")}  c1={t("card.costTimeSaving.content.c1")} />
+                <Card image='/images/cardImage/simplicite.jpg' title={t("card.simplicity.title")}  c1={t("card.simplicity.content.c1")} c2={t("card.simplicity.content.c2")}/>
+                <Card image='/images/cardImage/reability.jpg' title={t("card.reability.title")}  c1={t("card.reability.content.c1")} c2={t("card.reability.content.c2")}/>
+                <Card image='/images/cardImage/time.png' title={t("card.costTimeSaving.title")}  c1={t("card.costTimeSaving.content.c1")} />
             </motion.div>
             <div className='text-title text-center mt-14 text-xl font-semibold'>
                 {t('card.resume')}
