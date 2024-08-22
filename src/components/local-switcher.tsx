@@ -44,7 +44,7 @@ export default function LocalSwitcher() {
       code: 'en',
       label: 'English',
       icon: <Image
-        src="/icons/usa.png"
+        src="/icons/royaume-uni.png"
         alt="logo"
         width={30}
         height={30}
