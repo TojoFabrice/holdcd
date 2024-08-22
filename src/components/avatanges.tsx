@@ -25,7 +25,7 @@ function Avatanges() {
                 <Card image='/images/cardImage/reability.jpg' title={t("card.reability.title")}  c1={t("card.reability.content.c1")} c2={t("card.reability.content.c2")}/>
                 <Card image='/images/cardImage/time.png' title={t("card.costTimeSaving.title")}  c1={t("card.costTimeSaving.content.c1")} />
             </motion.div>
-            <div className='text-title text-center mt-14 text-xl font-semibold'>
+            <div className='text-title text-center mt-14 text-lg font-semibold'>
                 {t('card.resume')}
             </div>
         </section>

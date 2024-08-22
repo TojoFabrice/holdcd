@@ -13,19 +13,18 @@ function AboutSection() {
         </div>
         <span className="w-full bg-minibar h-[2px] block my-5"></span>
       </div>
-      <div className="text-xl text-text font-light">
-      {t("content.paraph1")} <br></br><br></br>
-      {t("content.paraph2")} <br></br><br></br>
-      {t("content.paraph3")}
-      <ul className="list-disc ml-10">
-        <li>{t("content.li1")}</li>
-        <li>{t("content.li2")}</li>
-        <li>{t("content.li3")}</li>
-        <li>{t("content.li4")}</li>
-      </ul>
-      <br></br>
-      {t("content.paraph4")}
-
+      <div className="text-base text-text font-light">
+        {t("content.paraph1")} <br></br><br></br>
+        {t("content.paraph2")} <br></br><br></br>
+        {t("content.paraph3")}
+        <ul className="list-disc ml-10">
+          <li>{t("content.li1")}</li>
+          <li>{t("content.li2")}</li>
+          <li>{t("content.li3")}</li>
+          <li>{t("content.li4")}</li>
+        </ul>
+        <br></br>
+        {t("content.paraph4")}
       </div>
     </section>
   )

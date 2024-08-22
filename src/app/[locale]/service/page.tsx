@@ -19,7 +19,7 @@ function TotoPage() {
         </div>
         <span className="w-full bg-minibar h-[2px] block my-5"></span>
       </div>
-      <div className="text-xl text-text font-light">
+      <div className="text-text font-light">
         <Service
           positionImage='left'
           image="/images/b2b.jpg"
@@ -38,9 +38,8 @@ function TotoPage() {
           c1={t("technicalAdvice.content.c1")}
           c2={t("technicalAdvice.content.c2")}
           c3={t("technicalAdvice.content.c3")}
-
-
         />
+
         <Service
           positionImage='left'
           image="/images/suivi.jpg"
@@ -49,8 +48,8 @@ function TotoPage() {
           c1={t("monitoringControl.content.c1")}
           c2={t("monitoringControl.content.c2")}
           c3={t("monitoringControl.content.c3")}
-
         />
+
         <Service positionImage='right'
           image="/images/Mail-sent.jpg"
           icon="/icons/processus.png"

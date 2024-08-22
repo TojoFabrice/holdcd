@@ -46,10 +46,10 @@ function Service({
                                     width={24}
                                     height={24}
                                 />
-                                <div className='text-title font-semibold'>{title}</div>
+                                <div className='text-xl text-title font-semibold'>{title}</div>
                             </div>
                             <div>
-                                <ul className="list-disc ml-5">
+                                <ul className="text-base list-disc ml-5">
                                     <li>{c1}</li>
                                     <li>{c2}</li>
                                     <li>{c3}</li>
@@ -71,10 +71,10 @@ function Service({
                                     width={24}
                                     height={24}
                                 />
-                                <div className='text-title font-semibold'>{title}</div>
+                                <div className='text-xl text-title font-semibold'>{title}</div>
                             </div>
                             <div>
-                                <ul className="list-disc ml-5">
+                                <ul className="text-base list-disc ml-5">
                                     <li>{c1}</li>
                                     <li>{c2}</li>
                                     <li>{c3}</li>

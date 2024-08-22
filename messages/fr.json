@@ -3,13 +3,13 @@
         "title": "bonjour"
     },
     "Hero": {
-        "slogan": "Vos services de sourcing sur le marché européen"
+        "slogan": "Votre agent de sourcing"
     },
     "Navigation": {
         "home": "Accueil",
         "about": "A propos",
         "advantage": "Avantages",
-        "howTowork": "Comment ça marche",
+        "howItWork": "Comment ça marche",
         "service": "Nos services",
         "contact": "Contact"
     },

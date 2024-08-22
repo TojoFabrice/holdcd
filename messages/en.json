@@ -3,13 +3,13 @@
         "title": "Hello world!"
     },
     "Hero": {
-        "slogan": "Your European Market Sourcing Services"
+        "slogan": "Your Sourcing Agent"
     },
     "Navigation": {
         "home": "Home",
         "about": "About",
         "advantage": "Advantages",
-        "howTowork": "How it works",
+        "howItWork": "How it works",
         "service": "Our services",
         "contact": "Contact"
     },

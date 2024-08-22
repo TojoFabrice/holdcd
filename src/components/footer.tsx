@@ -35,10 +35,10 @@ export default function Footer() {
     },
     {
       id: 4,
-      title: tn('howTowork'),
-      path: "/#howToWork",
+      title: tn('howItWork'),
+      path: "/#howItWork",
       newTab: false,
-      sectionId: "howTowork"
+      sectionId: "howItWork"
     },
     {
       id: 5,
@@ -67,7 +67,7 @@ export default function Footer() {
         // Scroll to the section if sectionId is provided
         const element = document.getElementById(sectionId);
         if (element) {
-          const offsetTop = element.offsetTop - 70;
+          const offsetTop = element.offsetTop - 28;
           window.scrollTo({ top: offsetTop, behavior: 'smooth' });
         }
       } else {

@@ -36,13 +36,15 @@ function Card({
         className="card w-96 shadow-xl bg-primary"
         variants={cardVariants}>
             <figure>
-                <Image
-                    src={image}
-                    alt="My Image Description"
-                    width={500}
-                    height={300}
-                    layout="responsive"
-                />
+                <div style={{height:"256px", width:"100%"}}>
+                    <Image
+                        src={image}
+                        alt="My Image Description"
+                        width={500}
+                        height={300}
+                        layout="responsive"
+                    />
+                </div>
             </figure>
             <div className="card-body text-text md:h-96 lg:h-64 h-60">
                 <h2 className="card-title justify-center text-center text-secondary text-xl md:text-xl">

@@ -2,16 +2,12 @@
 
 import AboutSection from '@/components/aboutSection';
 import Avatanges from '@/components/avatanges';
-import Hero from '@/components/hero';
 import HowItWork from '@/components/howItWork';
-import { useTranslations } from 'next-intl';
-import { motion } from "framer-motion";
 import { useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
 
 export default function HomePage() {
-  const t = useTranslations('HomePage');
 
   const router = useRouter();
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -23,7 +19,7 @@ export default function HomePage() {
     if (hash) {
       const element = document.getElementById(hash.substring(1));
       if (element) {
-        const offsetTop = element.offsetTop - 75;
+        const offsetTop = element.offsetTop - 28;
         window.scrollTo({ top: offsetTop, behavior: 'smooth' });
       }
     }
@@ -34,16 +30,25 @@ export default function HomePage() {
       <div className=''>
         <div
           className='m-auto'
-          id="about" ref={aboutRef}
+          id="about" 
+          ref={aboutRef}
         >
           <AboutSection />
         </div>
 
-        <div className='m-auto bg-[#F0F1EF]' id='advantage' ref={advantagesRef}>
+        <div 
+          className='m-auto bg-[#F0F1EF]' 
+          id='advantage' 
+          ref={advantagesRef}
+        >
           <Avatanges />
         </div>
 
-        <div className='m-auto' id='howTowork' ref={howItWorkRef}>
+        <div 
+          className='m-auto' 
+          id='howItWork' 
+          ref={howItWorkRef}
+        >
           <HowItWork />
         </div>
 

@@ -18,6 +18,8 @@ export default function Header() {
   };
 
   const t = useTranslations('Navigation');
+  const th = useTranslations('Hero');
+
   const usePathName = usePathname();
   const router = useRouter();
 
@@ -39,7 +41,7 @@ export default function Header() {
         // Scroll to the section if sectionId is provided
         const element = document.getElementById(sectionId);
         if (element) {
-          const offsetTop = element.offsetTop - 70;
+          const offsetTop = element.offsetTop - 28;
           window.scrollTo({ top: offsetTop, behavior: 'smooth' });
         }
       } else {
@@ -81,10 +83,10 @@ export default function Header() {
     },
     {
       id: 4,
-      title: t('howTowork'),
-      path: "/#howToWork",
+      title: t('howItWork'),
+      path: "/#howItWork",
       newTab: false,
-      sectionId: "howTowork"
+      sectionId: "howItWork"
     },
     {
       id: 5,
@@ -109,19 +111,26 @@ export default function Header() {
     >
       <div className="w-full mx-10">
         <div className="relative  flex items-center justify-between">
-          <div className="w-60 max-w-full px-4 xl:mr-12">
+          <div className="flex items-center text-white  max-w-full px-4 xl:mr-12">
             <Link
               href="/"
-              className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"} `}
+              className={`header-logo block ${sticky ? "py-5 lg:py-2" : "py-8"} `}
             >
               <Image
                 src="/images/logo.png"
                 alt="logo"
-                width={50}
+                width={60}
                 height={10}
                 className=""
               />
             </Link>
+            {
+               sticky && 
+               <div className='w-60 ml-6 hidden sm:block'>
+                { th("slogan") }
+               </div>
+            }
+            
           </div>
 
           <div className="flex w-full items-center justify-end px-4">
