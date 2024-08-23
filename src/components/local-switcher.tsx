@@ -91,8 +91,11 @@ export default function LocalSwitcher() {
               <button
                 key={lang.code}
                 onClick={() => handleSelect(lang.code)}
-                className="px-4 py-2 text-sm text-title hover:bg-primary hover:text-white w-full text-left flex items-center"
-                role="menuitem"
+               // className="px-4 py-2 text-sm text-title hover:bg-primary hover:text-white w-full text-left flex items-center"
+               className={`px-4 py-2 text-sm text-title hover:bg-primary hover:text-white w-full text-left flex items-center ${
+                lang.code === selectedLang ? 'bg-gray-100' : ''
+              }`}
+               role="menuitem"
               >
                 {lang.icon}
                 <span className="ml-2">{lang.label}</span>

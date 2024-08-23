@@ -18,7 +18,7 @@ function HowItWork() {
             <div className='flex justify-center'>
                 <div className='w-full flex justify-center'>
                     <Image
-                        src={localActive == "fr" ? "/images/CM1_FR.png" : "/images/CM1_ENG.png"}
+                        src={localActive == "fr" ? "/images/C1_FR.png" : "/images/C1_EN.png"}
                         alt="fiable"
                         width={2000}
                         height={0}
@@ -27,7 +27,7 @@ function HowItWork() {
             </div>
             <div className='w-full flex justify-center mt-12'>
                 <Image
-                    src={localActive == "fr" ? "/images/CM3_FR.png" : "/images/CM3_ENG.png"}
+                    src={localActive == "fr" ? "/images/C2_FR.png" : "/images/C2_EN.png"}
                     alt="fiable"
                     width={2000}
                     height={0}
