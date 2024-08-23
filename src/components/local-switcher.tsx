@@ -87,35 +87,19 @@ export default function LocalSwitcher() {
       {dropdownOpen && (
         <div id="dropdown-menu" className="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-            <button
-              onClick={() => handleSelect('en')}
-              className={`px-4 py-2 text-sm text-title hover:bg-primary hover:text-white w-full text-left flex items-center ${selectedLang === 'en' ? 'bg-gray-100' : ''
-                }`}
-              role="menuitem"
-            >
-              <Image
-                src="/icons/royaume-uni.png"
-                alt="logo"
-                width={30}
-                height={30}
-              />
-              <span className="ml-2">English</span>
-            </button>
-
-            <button
-              onClick={() => handleSelect('fr')}
-              className={`px-4 py-2 text-sm text-title hover:bg-primary hover:text-white w-full text-left flex items-center ${selectedLang === 'fr' ? 'bg-gray-100' : ''
-                }`}
-              role="menuitem"
-            >
-              <Image
-                src="/icons/france.png"
-                alt="logo"
-                width={30}
-                height={30}
-              />
-              <span className="ml-2">Français</span>
-            </button>
+            {languages.map((lang) => (
+              <div
+                key={lang.code}
+                onClick={() => handleSelect(lang.code)}
+                className={`px-4 py-2 text-sm cursor-pointer text-title hover:bg-primary hover:text-white w-full text-left flex items-center ${
+                lang.code === selectedLang ? 'bg-gray-100' : ''
+              }`}
+               role="menuitem"
+              >
+                {lang.icon}
+                <span className="ml-2">{lang.label}</span>
+              </div>
+            ))} 
           </div>
         </div>
       )}
