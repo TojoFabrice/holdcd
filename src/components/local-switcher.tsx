@@ -51,8 +51,8 @@ export default function LocalSwitcher() {
       />
     },
     {
-      code: 'fr', 
-      label: 'Français', 
+      code: 'fr',
+      label: 'Français',
       icon: <Image
         src="/icons/france.png"
         alt="logo"
@@ -63,7 +63,7 @@ export default function LocalSwitcher() {
   ];
 
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
-  
+
 
   const handleSelect = (lang: string) => {
     setSelectedLang(lang);
@@ -77,30 +77,45 @@ export default function LocalSwitcher() {
 
   return (
     <div>
-      <button  
-       id="dropdown-button"
-       onClick={toggleDropdown}
-       className="inline-flex justify-center w-12 px-4 py-2   border border-text rounded-md shadow-sm hover:bg-gray-50">
+      <button
+        id="dropdown-button"
+        onClick={toggleDropdown}
+        className="inline-flex justify-center w-12 px-4 py-2   border border-text rounded-md shadow-sm hover:bg-gray-50">
         {languages.find(lang => lang.code === localActive)?.icon}
       </button>
 
       {dropdownOpen && (
         <div id="dropdown-menu" className="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-            {languages.map((lang) => (
-              <button
-                key={lang.code}
-                onClick={() => handleSelect(lang.code)}
-               // className="px-4 py-2 text-sm text-title hover:bg-primary hover:text-white w-full text-left flex items-center"
-               className={`px-4 py-2 text-sm text-title hover:bg-primary hover:text-white w-full text-left flex items-center ${
-                lang.code === selectedLang ? 'bg-gray-100' : ''
-              }`}
-               role="menuitem"
-              >
-                {lang.icon}
-                <span className="ml-2">{lang.label}</span>
-              </button>
-            ))}
+            <button
+              onClick={() => handleSelect('en')}
+              className={`px-4 py-2 text-sm text-title hover:bg-primary hover:text-white w-full text-left flex items-center ${selectedLang === 'en' ? 'bg-gray-100' : ''
+                }`}
+              role="menuitem"
+            >
+              <Image
+                src="/icons/royaume-uni.png"
+                alt="logo"
+                width={30}
+                height={30}
+              />
+              <span className="ml-2">English</span>
+            </button>
+
+            <button
+              onClick={() => handleSelect('fr')}
+              className={`px-4 py-2 text-sm text-title hover:bg-primary hover:text-white w-full text-left flex items-center ${selectedLang === 'fr' ? 'bg-gray-100' : ''
+                }`}
+              role="menuitem"
+            >
+              <Image
+                src="/icons/france.png"
+                alt="logo"
+                width={30}
+                height={30}
+              />
+              <span className="ml-2">Français</span>
+            </button>
           </div>
         </div>
       )}
