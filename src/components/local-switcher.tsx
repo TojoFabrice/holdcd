@@ -44,7 +44,7 @@ export default function LocalSwitcher() {
       code: 'en',
       label: 'English',
       icon: <Image
-        src="/icons/royaume-uni.png"
+        src="/icons/eng.svg"
         alt="logo"
         width={30}
         height={30}
@@ -54,7 +54,7 @@ export default function LocalSwitcher() {
       code: 'fr',
       label: 'Français',
       icon: <Image
-        src="/icons/france.png"
+        src="/icons/fr.svg"
         alt="logo"
         width={30}
         height={30}
