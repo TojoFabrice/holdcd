@@ -27,7 +27,7 @@ function HowItWork() {
             </div>
             <div className='w-full flex justify-center mt-12'>
                 <Image
-                    src={localActive == "fr" ? "/images/C2_FR.png" : "/images/C2_EN.png"}
+                    src={localActive == "fr" ? "/images/CM3_FR.png" : "/images/CM3_EN.png"}
                     alt="fiable"
                     width={2000}
                     height={0}
