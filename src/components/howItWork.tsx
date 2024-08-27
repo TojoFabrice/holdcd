@@ -8,9 +8,9 @@ function HowItWork() {
     const t = useTranslations('howItWork');
 
     return (
-        <section  className="bg-[#FFF] p-10 md:px-20 md:py-16  m-auto">
+        <section  className="bg-[#FFF] px-10 py-5 md:px-20 md:py-5  m-auto">
             <div>
-                <div className="text-title	text-3xl font-medium">
+                <div className="text-title	text-2xl font-medium">
                     {t('title')}
                 </div>
                 <span className="w-full bg-minibar h-[2px] block my-5"></span>
@@ -18,18 +18,18 @@ function HowItWork() {
             <div className='flex justify-center'>
                 <div className='w-full flex justify-center'>
                     <Image
-                        src={localActive == "fr" ? "/images/C1_FR.png" : "/images/C1_EN.png"}
+                        src={localActive == "fr" ? "/images/schema1_fr.png" : "/images/schema1_en.png"}
                         alt="fiable"
-                        width={2000}
+                        width={1200}
                         height={0}
                     />
                 </div>
             </div>
-            <div className='w-full flex justify-center mt-12'>
+            <div className='w-full flex justify-center mt-8 md:mt-16'>
                 <Image
-                    src={localActive == "fr" ? "/images/CM3_FR.png" : "/images/CM3_EN.png"}
+                    src={localActive == "fr" ? "/images/schema2_fr.png" : "/images/schema2_en.png"}
                     alt="fiable"
-                    width={2000}
+                    width={1200}
                     height={0}
                 />
             </div>

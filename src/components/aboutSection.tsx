@@ -6,9 +6,9 @@ function AboutSection() {
   const t = useTranslations('About');
   
   return (
-    <section className="bg-[#F9F8F8] p-10 md:px-20 md:py-16 mt-0 m-auto">
+    <section className="bg-[#F9F8F8] px-10 py-5 md:px-20 md:py-5 mt-0 m-auto">
       <div>
-        <div className="text-title	text-3xl font-medium">
+        <div className="text-title	text-2xl font-medium">
           {t("title")}
         </div>
         <span className="w-full bg-minibar h-[2px] block my-5"></span>

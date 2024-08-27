@@ -48,7 +48,8 @@ export default function LocalSwitcher() {
         alt="logo"
         width={30}
         height={30}
-      />
+      />,
+      btnLabel: "Language"
     },
     {
       code: 'fr',
@@ -58,7 +59,8 @@ export default function LocalSwitcher() {
         alt="logo"
         width={30}
         height={30}
-      />
+      />,
+      btnLabel: "Langage"
     },
   ];
 
@@ -80,8 +82,8 @@ export default function LocalSwitcher() {
       <button
         id="dropdown-button"
         onClick={toggleDropdown}
-        className="inline-flex justify-center w-12 px-4 py-2   border border-text rounded-md shadow-sm hover:bg-gray-50">
-        {languages.find(lang => lang.code === localActive)?.icon}
+        className="inline-flex justify-center w-[auto] px-4 py-2 text-white  border border-text rounded-md shadow-sm hover:bg-gray-50">
+        {languages.find(lang => lang.code === localActive)?.btnLabel}
       </button>
 
       {dropdownOpen && (

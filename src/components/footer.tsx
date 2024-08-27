@@ -67,7 +67,7 @@ export default function Footer() {
         // Scroll to the section if sectionId is provided
         const element = document.getElementById(sectionId);
         if (element) {
-          const offsetTop = element.offsetTop - 28;
+          const offsetTop = element.offsetTop - 60;
           window.scrollTo({ top: offsetTop, behavior: 'smooth' });
         }
       } else {
@@ -84,13 +84,13 @@ export default function Footer() {
 
 
   return (
-    <div className='p-10 text-center bg-primary'>
+    <div className='px-10 md: py-3 text-center bg-primary'>
       <div className='w-full'>
         <div className='flex justify-center p-5'>
           <Image
-            src="/images/logo.png"
+            src="/images/logo-web.jpg"
             alt="logo"
-            width={90}
+            width={110}
             height={10}
             className=""
           />

@@ -19,7 +19,7 @@ export default function HomePage() {
     if (hash) {
       const element = document.getElementById(hash.substring(1));
       if (element) {
-        const offsetTop = element.offsetTop - 28;
+        const offsetTop = element.offsetTop - 60;
         window.scrollTo({ top: offsetTop, behavior: 'smooth' });
       }
     }

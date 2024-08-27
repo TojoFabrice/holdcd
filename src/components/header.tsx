@@ -23,7 +23,6 @@ export default function Header() {
   const usePathName = usePathname();
   const router = useRouter();
 
-
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
       setSticky(true);
@@ -41,7 +40,7 @@ export default function Header() {
         // Scroll to the section if sectionId is provided
         const element = document.getElementById(sectionId);
         if (element) {
-          const offsetTop = element.offsetTop - 28;
+          const offsetTop = element.offsetTop - 60;
           window.scrollTo({ top: offsetTop, behavior: 'smooth' });
         }
       } else {
@@ -104,9 +103,9 @@ export default function Header() {
 
   return (
     <header
-      className={`header left-0 top-0 z-40 flex w-full items-center ${sticky
-        ? "fixed z-[9999] bg-[#1A2665] !bg-opacity-80 shadow-sticky backdrop-blur-sm transition "
-        : "absolute bg-transparent"
+      className={`header h-16 left-0 top-0 z-40 flex w-full items-center bg-[#1A2665] ${sticky
+        ? "fixed z-[9999] shadow-sticky backdrop-blur-sm transition "
+        : "absolute"
         }`}
     >
       <div className="w-full mx-10">
@@ -117,19 +116,19 @@ export default function Header() {
               className={`header-logo block ${sticky ? "py-5 lg:py-2" : "py-8"} `}
             >
               <Image
-                src="/images/logo.png"
+                src="/images/logo-web.jpg"
                 alt="logo"
-                width={60}
+                width={75}
                 height={10}
                 className=""
               />
             </Link>
-            {
+            {/* {
                sticky && 
                <div className='w-60 ml-6 hidden sm:block'>
                 { th("slogan") }
                </div>
-            }
+            } */}
             
           </div>
 
@@ -179,7 +178,7 @@ export default function Header() {
                           className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 justify-center
                             ${usePathName === menuItem.path
                               ? "text-secondary hover:text-white"
-                              : (sticky || navbarOpen ? "text-white hover:text-secondary" : "text-primary hover:text-secondary")
+                              : (sticky || navbarOpen ? "text-white hover:text-secondary" : "text-white hover:text-secondary")
                             }`}
                         >
                           {menuItem.title}

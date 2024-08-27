@@ -1,4 +1,5 @@
 "use client"
+import QrCode from '@/components/QRCode/QrCode';
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import React from 'react'
@@ -21,7 +22,7 @@ function ContactPage() {
     };
 
     return (
-        <div className='p-10 md:p-16'>
+        <div className='px-10 py-5 md:px-16 md:py-5'>
             <section
                 className="px-0 md:px-10  m-auto w-full"
                 // style={{
@@ -30,7 +31,7 @@ function ContactPage() {
                 // }}
             >
                 <div>
-                    <div className="text-title	text-3xl font-medium">
+                    <div className="text-title	text-2xl font-medium">
                         {t("title")}
                     </div>
                     <span className="w-full bg-minibar h-[2px] block my-5"></span>
@@ -74,17 +75,18 @@ function ContactPage() {
                     </div>
                     <div className='flex justify-center w-full h-96 md:w-2/5 md:h-auto bg-grayFonced px-6 py-10'>
                         <div className='text-text w-60'>
-                            <p><span className='font-semibold'>{t('address')} :</span> 9 Rue de Condé 33064 BORDEAUX CEDEX FRANCE</p>
+                            {/* <p><span className='font-semibold'>{t('address')} :</span> 9 Rue de Condé 33064 BORDEAUX CEDEX FRANCE</p> */}
                             <p><span className='font-semibold'>Email :</span> contact@holdcd.com</p>
                             <p><span className='font-semibold'>{t('phone')} :</span>  + 33 6 71 94 07 40 </p>
                             <div className='flex justify-center flex-col items-center gap-2 text-text mt-4'>
-                                <p className='font-semibold'>QR Code</p>
+                                {/* <p className='font-semibold'>QR Code</p>
                                 <Image
                                     src="/images/QR.png"
                                     alt="qrcode"
                                     width={170}
                                     height={170}
-                                />
+                                /> */}
+                                <QrCode />
                             </div>
                         </div>
                     </div>

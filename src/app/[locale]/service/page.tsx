@@ -8,13 +8,13 @@ function TotoPage() {
 
   return (
     <section
-      className="bg-service-bg p-10 my-16 w-4/5 m-auto"
+      className="bg-service-bg px-10 py-5 my-5 w-4/5 m-auto"
       style={{
         boxShadow: 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px',
       }}
     >
       <div>
-        <div className="text-title	text-3xl font-medium">
+        <div className="text-title	text-2xl font-medium">
           {t("title")}
         </div>
         <span className="w-full bg-minibar h-[2px] block my-5"></span>
