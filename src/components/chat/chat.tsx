@@ -34,7 +34,7 @@ function Chat() {
                         <div className='w-64 bg-white h-24 rounded-b-lg flex justify-center items-center'>
                             <div className='flex items-center text-primary  bg-minibar border-l-2 border-whatsapp-color h-16 px-4 cursor-pointer hover:bg-fondContact'>
                                 <Link
-                                    href="https://wa.me/261349080234"
+                                    href="https://wa.me/33671940740"
                                     className="flex items-center gap-4"
                                     target="_blank"
                                 >
@@ -45,7 +45,7 @@ function Chat() {
                                         height={10}
                                         className=""
                                     />
-                                    <p>+261 34 90 802 34</p>
+                                    <p>+33 6 71 94 07 40</p>
                                 </Link >
                             </div>
                         </div>
