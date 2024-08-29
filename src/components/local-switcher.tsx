@@ -60,7 +60,7 @@ export default function LocalSwitcher() {
         width={30}
         height={30}
       />,
-      btnLabel: "Langage"
+      btnLabel: "Langue"
     },
   ];
 
