@@ -1,4 +1,5 @@
 "use client"
+import MapComponent from '@/components/map/MapComponent';
 import QrCode from '@/components/QRCode/QrCode';
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
@@ -39,31 +40,28 @@ function ContactPage() {
 
                 <div className='flex flex-col gap-10'>
                     <div className='flex flex-col md:flex-row gap-5'>
-                        <div className='w-full h-60 md:w-1/2'>
+                        <div className='relative w-full h-60 md:w-1/2'>
                             <div className='mb-2'>
                                 <p className='text-lg font-semibold text-title'>Nos bureaux</p>
                             </div>
-                            <div className="relative w-full h-full cursor-pointer" onClick={handleRedirect} >
-                                <Image
-                                    src="/images/9rue_conde.png"
-                                    alt="carte"
-                                    layout="fill"
-                                    objectFit="cover"
-                                    quality={100}
+                            <div className='relative w-full h-full'>
+                                <MapComponent 
+                                    lat={44.84365211742628}
+                                    lng={-0.5734254809420911}
+                                    address="9 Rue de Condé 33064 BORDEAUX CEDEX"
                                 />
                             </div>
+
                         </div>
                         <div className='w-full h-60 mt-10 md:mt-0 md:w-1/2'>
                             <div className='mb-2'>
                                 <p  className='text-lg font-semibold text-title'>Entrepôt</p>
                             </div>
-                            <div className="relative w-full h-full cursor-pointer" onClick={handleRedirect} >
-                                <Image
-                                    src="/images/map.png"
-                                    alt="carte"
-                                    layout="fill"
-                                    objectFit="cover"
-                                    quality={100}
+                            <div className='relative w-full h-full'>
+                                <MapComponent 
+                                    lat={latitude}
+                                    lng={longitude}
+                                    address="HOLD CD"
                                 />
                             </div>
                         </div>
