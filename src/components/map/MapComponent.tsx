@@ -14,8 +14,6 @@ const LeafletMap: React.FC<LeafletMapProps> = ({ lat, lng, address }) => {
   const markerRef = useRef<L.Marker>(null);
 
   useEffect(() => {
-    // Configuration des icônes
-    delete L.Icon.Default.prototype._getIconUrl;
 
     L.Icon.Default.mergeOptions({
       iconRetinaUrl: '/icons/marker.png',
