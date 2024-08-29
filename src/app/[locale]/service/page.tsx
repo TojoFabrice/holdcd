@@ -8,7 +8,7 @@ function TotoPage() {
 
   return (
     <section
-      className="bg-service-bg px-10 py-5 my-5 w-4/5 m-auto"
+      className="bg-service-bg px-10 py-5 my-5 w-4/5 m-auto max-w-7xl"
       style={{
         boxShadow: 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px',
       }}
