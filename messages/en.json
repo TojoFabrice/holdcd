@@ -102,6 +102,9 @@
         "name": "Username",
         "send": "Send",
         "address": "Address",
-        "phone": "Phone"
+        "phone": "Phone",
+        "offices": "Our offices",
+        "warehouse": "Warehouse",
+        "qrcode": "Scan the QR Code to save our contact"
     }
 }

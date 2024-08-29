@@ -13,14 +13,7 @@ function ContactPage() {
 
     const latitude = 45.71927256803402; // Example latitude (Eiffel Tower, Paris)
     const longitude =  4.960192782070582; // Example longitude (Eiffel Tower, Paris)
-    // const redirectToGoogleMapsWithMarker = (latitude: number, longitude: number): any => {
-    //     const url = `https://www.google.com/maps?q=${latitude},${longitude}&t=&z=13&ie=UTF8&iwloc=&output=embed&markers=color:red%7C${latitude},${longitude}`;
-    //     window.open(url, '_blank');
-    // }
 
-    // const handleRedirect = () => {
-    //     redirectToGoogleMapsWithMarker(latitude, longitude);
-    // };
 
     return (
         <div className='px-10 py-5 md:px-16 md:py-5'>
@@ -42,7 +35,7 @@ function ContactPage() {
                     <div className='flex flex-col md:flex-row gap-5'>
                         <div className='relative w-full h-60 md:w-1/2'>
                             <div className='mb-2'>
-                                <p className='text-lg font-semibold text-title'>Nos bureaux</p>
+                                <p className='text-lg font-semibold text-title'>{t('offices')}</p>
                             </div>
                             <div className='relative w-full h-full'>
                                 <MapComponent 
@@ -55,7 +48,7 @@ function ContactPage() {
                         </div>
                         <div className='w-full h-60 mt-10 md:mt-0 md:w-1/2'>
                             <div className='mb-2'>
-                                <p  className='text-lg font-semibold text-title'>Entrepôt</p>
+                                <p  className='text-lg font-semibold text-title'>{t('warehouse')}</p>
                             </div>
                             <div className='relative w-full h-full'>
                                 <MapComponent 
@@ -105,17 +98,10 @@ function ContactPage() {
                         </div>
                         <div className='flex justify-center w-full h-96 md:w-1/2 md:h-auto bg-white px-6 py-10'>
                             <div className='text-text w-60'>
-                                {/* <p><span className='font-semibold'>{t('address')} :</span> 9 Rue de Condé 33064 BORDEAUX CEDEX FRANCE</p> */}
+
                                 <p><span className='font-semibold'>Email :</span> contact@holdcd.com</p>
                                 <p><span className='font-semibold'>{t('phone')} :</span>  + 33 6 71 94 07 40 </p>
                                 <div className='flex justify-center flex-col items-center gap-2 text-text mt-4'>
-                                    {/* <p className='font-semibold'>QR Code</p>
-                                    <Image
-                                        src="/images/QR.png"
-                                        alt="qrcode"
-                                        width={170}
-                                        height={170}
-                                    /> */}
                                     <QrCode />
                                 </div>
                             </div>

@@ -102,6 +102,9 @@
         "name": "Nom",
         "send": "Envoyer",
         "address": "Adresse",
-        "phone": "Tél"
+        "phone": "Tél",
+        "offices": "Nos bureaux",
+        "warehouse": "Entrepôts",
+        "qrcode": "Scannez le QR Code pour enregistrer notre contact"
     }
 }
