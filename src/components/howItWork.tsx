@@ -16,7 +16,8 @@ function HowItWork() {
                     </div>
                     <span className="w-full bg-minibar h-[2px] block my-5"></span>
                 </div>
-                <div className='flex justify-center'>
+                <div className=''>
+                    <h3 className='mb-10 mt-1 text-sm md:text-lg border-b-2 text-title font-semibold inline-block'>{t('processus_standart')}</h3>
                     <div className='w-full flex justify-center'>
                         <Image
                             src={localActive == "fr" ? "/images/schema1_fr.png" : "/images/schema1_en.png"}
@@ -26,13 +27,16 @@ function HowItWork() {
                         />
                     </div>
                 </div>
-                <div className='w-full flex justify-center mt-8 md:mt-16'>
-                    <Image
-                        src={localActive == "fr" ? "/images/schema2_fr.png" : "/images/schema2_en.png"}
-                        alt="fiable"
-                        width={1200}
-                        height={0}
-                    />
+                <div>
+                    <h3 className='mt-16 text-sm md:text-lg border-b-2 text-title font-semibold inline-block'>{t('processus_holdcd')}</h3>
+                    <div className='w-full flex justify-center mt-8 md:mt-10'>
+                        <Image
+                            src={localActive == "fr" ? "/images/schema2_fr.png" : "/images/schema2_en.png"}
+                            alt="fiable"
+                            width={1200}
+                            height={0}
+                        />
+                    </div>
                 </div>
             </div>
         </section>

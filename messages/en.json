@@ -56,7 +56,9 @@
         }
     },
     "howItWork": {
-        "title": "How it works ?"
+        "title": "How it works ?",
+        "processus_standart": "Your standard process",
+        "processus_holdcd": "Your process with Hold CD"
     },
     "Service": {
         "title": "Our Services",
