@@ -88,7 +88,7 @@ export default function Footer() {
       <div className='w-full'>
         <div className='flex justify-center p-5'>
           <Image
-            src="/images/logo-web.jpg"
+            src="/images/logo-web-white.png"
             alt="logo"
             width={110}
             height={10}

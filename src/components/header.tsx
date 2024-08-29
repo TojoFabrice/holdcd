@@ -116,9 +116,9 @@ export default function Header() {
               className={`header-logo block ${sticky ? "py-5 lg:py-2" : "py-8"} `}
             >
               <Image
-                src="/images/logo-web.jpg"
+                src="/images/logo-web-white.png"
                 alt="logo"
-                width={75}
+                width={100}
                 height={10}
                 className=""
               />
