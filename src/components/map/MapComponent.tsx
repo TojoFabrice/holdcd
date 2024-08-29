@@ -40,11 +40,9 @@ const LeafletMap: React.FC<LeafletMapProps> = ({ lat, lng, address }) => {
       zoom={15}
       scrollWheelZoom={false}
       style={{ height: '240px', width: '100%' }}
-      whenCreated={mapInstance => { mapRef.current = mapInstance; }} // Conserver une référence à la carte
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
       <Marker
         position={[lat, lng]}
