@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
+import L, { Icon } from 'leaflet';
 import { useEffect, useRef } from 'react';
 
 interface LeafletMapProps {
@@ -14,14 +14,6 @@ const LeafletMap: React.FC<LeafletMapProps> = ({ lat, lng, address }) => {
   const markerRef = useRef<L.Marker>(null);
 
   useEffect(() => {
-
-    L.Icon.Default.mergeOptions({
-      iconRetinaUrl: '/icons/marker.png',
-      iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
-      shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
-      iconSize: [37, 37],
-    });
-
     // Ouvrir le popup automatiquement après un court délai
     const timer = setTimeout(() => {
       if (markerRef.current) {
@@ -45,6 +37,12 @@ const LeafletMap: React.FC<LeafletMapProps> = ({ lat, lng, address }) => {
       <Marker
         position={[lat, lng]}
         ref={markerRef}
+        icon={new Icon({
+            iconUrl: '/icons/marker.png',
+            iconSize: [37, 37],
+            iconAnchor: [18, 37],
+            popupAnchor: [0, -37],
+        })}
       >
         <Popup>
           {address}

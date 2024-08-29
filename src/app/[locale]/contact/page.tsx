@@ -13,14 +13,14 @@ function ContactPage() {
 
     const latitude = 45.71927256803402; // Example latitude (Eiffel Tower, Paris)
     const longitude =  4.960192782070582; // Example longitude (Eiffel Tower, Paris)
-    const redirectToGoogleMapsWithMarker = (latitude: number, longitude: number): any => {
-        const url = `https://www.google.com/maps?q=${latitude},${longitude}&t=&z=13&ie=UTF8&iwloc=&output=embed&markers=color:red%7C${latitude},${longitude}`;
-        window.open(url, '_blank');
-    }
+    // const redirectToGoogleMapsWithMarker = (latitude: number, longitude: number): any => {
+    //     const url = `https://www.google.com/maps?q=${latitude},${longitude}&t=&z=13&ie=UTF8&iwloc=&output=embed&markers=color:red%7C${latitude},${longitude}`;
+    //     window.open(url, '_blank');
+    // }
 
-    const handleRedirect = () => {
-        redirectToGoogleMapsWithMarker(latitude, longitude);
-    };
+    // const handleRedirect = () => {
+    //     redirectToGoogleMapsWithMarker(latitude, longitude);
+    // };
 
     return (
         <div className='px-10 py-5 md:px-16 md:py-5'>
