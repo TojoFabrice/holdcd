@@ -38,7 +38,7 @@ export default function Header() {
   ) => {
     e.preventDefault();
     const { sectionId, path } = menuItem;
-  
+    setNavbarOpen(false)
     if (usePathName === '/' && sectionId) {
       // Scroll to the section if sectionId is provided
       const element = document.getElementById(sectionId);
@@ -49,12 +49,16 @@ export default function Header() {
     } else {
       // Navigate to the correct page first
       router.push(path);
+ 
     }
+   
+    
   };
 
   useEffect(() => {
     if (usePathName === '/' || usePathName === '/contact' || usePathName === '/service') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      setNavbarOpen(false)
     }
   }, [usePathName]);
   
@@ -164,8 +168,7 @@ export default function Header() {
                     ? "visibility top-full opacity-80 bg-primary flex flex-col items-center"
                     : "invisible top-[120%] opacity-0"
                   }
-                  `}
-              // className="navbar absolute"
+                `}
               >
                 <ul className="block lg:flex lg:space-x-12">
                   {
