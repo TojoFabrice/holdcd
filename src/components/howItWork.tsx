@@ -31,7 +31,7 @@ function HowItWork() {
                     <h3 className='mt-16 text-sm md:text-lg border-b-2 text-title font-semibold inline-block'>{t('processus_holdcd')}</h3>
                     <div className='w-full flex justify-center mt-8 md:mt-10'>
                         <Image
-                            src={localActive == "fr" ? "/images/schema2_fr.png" : "/images/schema2_en.png"}
+                            src={localActive == "fr" ? "/images/schema_fr.png" : "/images/schema_en.png"}
                             alt="fiable"
                             width={1200}
                             height={0}
