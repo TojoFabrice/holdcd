@@ -31,29 +31,33 @@ export default function Header() {
     }
   };
 
-  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, menuItem: Menu) => {
+
+  const handleScrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    menuItem: Menu
+  ) => {
     e.preventDefault();
     const { sectionId, path } = menuItem;
-
+  
     if (usePathName === '/' && sectionId) {
-      if (sectionId) {
-        // Scroll to the section if sectionId is provided
-        const element = document.getElementById(sectionId);
-        if (element) {
-          const offsetTop = element.offsetTop - 60;
-          window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-        }
-      } else {
-        // Scroll to the top if no sectionId is provided
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Scroll to the section if sectionId is provided
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const offsetTop = element.offsetTop - 60;
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
       }
     } else {
-      // If on a different page, navigate to the correct page first
-      if (path) {
-        router.push(path);
-      }
+      // Navigate to the correct page first
+      router.push(path);
     }
   };
+
+  useEffect(() => {
+    if (usePathName === '/' || usePathName === '/contact' || usePathName === '/service') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [usePathName]);
+  
 
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
@@ -123,12 +127,7 @@ export default function Header() {
                 className=""
               />
             </Link>
-            {/* {
-               sticky && 
-               <div className='w-60 ml-6 hidden sm:block'>
-                { th("slogan") }
-               </div>
-            } */}
+
             
           </div>
 
