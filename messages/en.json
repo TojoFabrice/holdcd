@@ -19,14 +19,24 @@
     "About": {
         "title": "About Hold CD",
         "content": {
-            "paraph1": "For over two decades, HOLD CD has specialized in the procurement of industrial supplies, raw materials, and MRO parts for industrial companies worldwide.",
-            "paraph2": "We have cultivated a vast network of suppliers in the European and North American markets, enabling our company to access timely and reliable information, as well as favorable pricing and delivery terms.",
-            "paraph3": "Our clients opt to delegate a portion of their procurement process to HOLD CD to streamline operations and enhance efficiency. This translates to :",
-            "li1": "prompt information,",
-            "li2": "product availability,",
-            "li3": "cost-effectiveness,",
-            "li4": "…or a combination of these benefits.",
-            "paraph4": "No matter where you are in the world, simply send an email with the required references, and our experts will provide a consolidated quote within 24 to 48 hours. All references, even from different suppliers, will be unified into a single process: one quote, one package, one streamlined import process."
+            "bold": {
+                "vaste": "extensive network of suppliers",
+                "infos":  "precise and reliable information quickly",
+                "ctarifaires": "competitive pricing and favorable delivery conditions",
+                "rationaliser": "streamline their operations and enhance their efficiency",
+                "transmission": "rapid information transmission",
+                "disponibility": "product availability",
+                "rentability": "increased profitability",
+                "une_seul": "one offer, one package, and a simplified import process"
+            },
+            "paraph1": "For more than two decades, Hold CD has established itself as a leading player in the supply of industrial equipment, raw materials, and spare parts for industrial companies worldwide.",
+            "paraph2": "We have built an $vaste in the European and North American markets, which allows us to access $infos, as well as to offer $ctarifaires.",
+            "paraph3": "Our clients choose to delegate part of their procurement process to Hold CD to $rationaliser. This results in :",
+            "li1": "$transmission,",
+            "li2": "$disponibility,",
+            "li3": "$rentability,",
+            "li4": "…or a combination of these advantages.",
+            "paraph4": "No matter where you are in the world, you simply need to send an email with the necessary references, and our experts will provide a comprehensive quote within 24 to 48 hours. All references, even those from different suppliers, will be integrated into a single process: $une_seul."
         }
     },
     "Advantage": {
