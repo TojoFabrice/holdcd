@@ -19,7 +19,7 @@ function ContactPage() {
     };
 
     
-    const sendEmail = (e) => {
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
     
         emailjs
