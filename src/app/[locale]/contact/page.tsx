@@ -18,6 +18,8 @@ function ContactPage() {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
+    const email = process.env.MAIL_CONTACT;
+
     
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -30,7 +32,7 @@ function ContactPage() {
                 from_name: form.name,
                 to_name: "Hold CD",
                 from_email: form.email,
-                to_email: "fabricetojo30@gmail.com",
+                to_email: email,
                 message: form.message,
             },
             'ZR4BgjlMNZRDC2Xpz',
