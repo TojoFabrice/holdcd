@@ -20,7 +20,7 @@ function HowItWork() {
                     <h3 className='mb-10 mt-1 text-sm md:text-lg border-b-2 text-title font-semibold inline-block'>{t('processus_standart')}</h3>
                     <div className='w-full flex justify-center'>
                         <Image
-                            src={localActive == "fr" ? "/images/schema1_fr.png" : "/images/schema1_en.png"}
+                            src={localActive == "fr" ? "/images/schma1_fr.png" : "/images/schema1_en.png"}
                             alt="fiable"
                             width={1200}
                             height={0}
